@@ -48,26 +48,54 @@
 
   &-controls {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
 
-    &-btn {
-      margin-left: 32px;
-      margin-right: 32px;
-      border-radius: 50%;
-      border: none;
-      width: 48px;
-      height: 48px;
-      outline: none;
+    &-rowG {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 142px;
 
-      &:first-child {
-        margin-right: 0;
+      &-btn {
+        margin-left: 32px;
+        margin-right: 32px;
+        border-radius: 50%;
+        border: none;
+        width: 48px;
+        height: 48px;
+        outline: none;
+
+        &:first-child {
+          margin-right: 0;
+        }
+
+        &:last-child {
+          margin-left: 0;
+        }
+
       }
+    }
 
-      &:last-child {
-        margin-left: 0;
+    &-rowB {
+      padding-left: 345px;
+
+      &__date {
+        font-family: $fonUbuntu;
+        font-size: $fontSizeL;
+        font-weight: 700;
+        color: $gray;
+        border: none;
+        border-bottom: 2px solid $gray;
+        background: transparent;
+        width: 178px;
+        text-align: left;
+        padding-bottom: 12px;
+
+        &:hover {
+          border-bottom: 2px solid $darkGray;
+          color: $darkGray;
+        }
       }
-
     }
   }
 }

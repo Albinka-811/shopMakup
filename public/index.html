@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width; initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&
+    family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet"> rel="stylesheet">
     <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
 <body>
@@ -107,12 +108,21 @@
             <button class="slider-buttons__right" type="button" name="text">Shop the menswear</button>
         </div>
         <div class="slider-controls">
-            <button class="slider-controls-btn" type="button" name="button">
-                <img class="slider-controls-btn__prev" src="~@assets/icons/prev-btn.png">
-            </button>
-            <button class="slider-controls-btn" type="button" name="button">
-                <img class="slider-controls-btn__next" src="~@assets/icons/next-btn.png">
-            </button>
+            <div class="slider-controls-rowG">
+                <button class="slider-controls-rowG-btn" type="button" name="button">
+                    <img class="slider-controls-rowG-btn__prev" src="~@assets/icons/prev-btn.png">
+                </button>
+                <button class="slider-controls-rowG-btn" type="button" name="button">
+                    <img class="slider-controls-rowG-btn__next" src="~@assets/icons/next-btn.png">
+                </button>
+            </div>
+
+            <div class="slider-controls-rowB">
+                <button class="slider-controls-rowB__date">01</button>
+                <button class="slider-controls-rowB__date">02</button>
+                <button class="slider-controls-rowB__date">03</button>
+                <button class="slider-controls-rowB__date">04</button>
+            </div>
         </div>
     </div>
     <div class="populars">
