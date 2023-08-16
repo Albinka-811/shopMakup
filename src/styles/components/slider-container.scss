@@ -1,0 +1,73 @@
+.slider {
+  background-image: url("./../../assets/images/backound-slider.png");
+  padding-top: 140px;
+  height: 800px;
+
+  &-text, &-title,
+  &-buttons {
+    padding-left: 345px;
+  }
+
+  &-text {
+    text-transform: uppercase;
+    font-family: $fontLato;
+    font-weight: 700;
+    font-size: 18px;
+    margin: 0 0 12px 0;
+  }
+
+  &-title {
+    font-family: $fontLato;
+    font-weight: 900;
+    font-size: 72px;
+    margin: 0 0 60px 0;
+  }
+
+  &-buttons {
+    &__left, &__right {
+      font-family: $fontLato;
+      font-size: $fontSizeXS;
+      font-weight: 700;
+      color: $primary;
+      padding: 15px 40px;
+      border: 1px solid $primary;
+      border-radius: 4px;
+      background: transparent;
+      outline: none;
+
+      &:hover {
+        color: $white;
+        background: $primary;
+      }
+    }
+
+    &__right {
+      margin-left: 24px;
+    }
+  }
+
+  &-controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &-btn {
+      margin-left: 32px;
+      margin-right: 32px;
+      border-radius: 50%;
+      border: none;
+      width: 48px;
+      height: 48px;
+      outline: none;
+
+      &:first-child {
+        margin-right: 0;
+      }
+
+      &:last-child {
+        margin-left: 0;
+      }
+
+    }
+  }
+}
