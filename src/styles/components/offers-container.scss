@@ -1,0 +1,35 @@
+.offers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $primary;
+  padding: 8px 0;
+
+  &-btnL, &-btnR {
+    outline: none;
+    border: none;
+    background: transparent;
+    padding: 0;
+    height: 16px;
+    margin-right: 12px;
+
+    &:last-child {
+      margin-right: 0;
+      margin-left: 12px;
+    }
+  }
+
+  &-text {
+    font-family: $fontLato;
+    font-weight: 900;
+    font-size: 12px;
+    color: $white;
+
+    &__link {
+      font-family: $fontLato;
+      font-weight: 400;
+      font-size: 12px;
+      color: $white;
+    }
+  }
+}

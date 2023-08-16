@@ -1,0 +1,22 @@
+@import "./variables.scss";
+@import "./components/header-container.scss";
+@import "./components/offers-container.scss";
+@import "components/slider-container";
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+}
+
+.main {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+button {
+  cursor: pointer;
+}
