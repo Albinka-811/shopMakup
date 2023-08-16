@@ -167,6 +167,7 @@
         &__like, &__cart {
           margin-right: 8px;
         }
+
         &__like {
           width: 20px;
           height: 20px;
@@ -181,14 +182,14 @@
           font-family: $fontLato;
           font-size: $fontSizeXS;
           font-weight: 400;
+        }
 
-          &:hover {
-            padding: 1px 8px;
-            background-color: $success;
-            color: $white;
-            text-align: center;
-            border-radius: 4px;
-          }
+        &__countC {
+          padding: 1px 8px;
+          background-color: $success;
+          color: $white;
+          text-align: center;
+          border-radius: 4px;
         }
       }
     }
