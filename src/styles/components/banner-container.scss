@@ -1,0 +1,146 @@
+.background1, .background4 {
+  width: 735px;
+  height: 500px;
+}
+
+.background2, .background3 {
+  width: 1109px;
+  height: 500px;
+}
+
+.background1 {
+  background-image: url("./../../assets/images/banner-img1.png");
+}
+
+.background2 {
+  background-image: url("./../../assets/images/banner-img2.png");
+}
+
+.background3 {
+  background-image: url("./../../assets/images/banner-img3.png");
+}
+
+.background4 {
+  background-color: #E5E8ED;
+  //background-image: url("./../../assets/images/banner-img4.png");
+}
+
+.banners {
+  margin-bottom: 180px;
+
+  &-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 16px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &-content {
+      margin-right: 16px;
+      padding: 60px 0 0 60px;
+      position: relative;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &__text {
+        font-family: $fontLato;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 14px;
+        color: #1E212C;
+        margin-bottom: 12px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      &__title {
+        font-family: $fontLato;
+        font-weight: 900;
+        font-size: $fontSizeXL;
+        color: #1E212C;
+        margin: 0 0 40px;
+      }
+
+      &__button, &__button2 {
+        border: 1px solid $primary;
+        border-radius: 4px;
+        padding: 14px 34px;
+        font-family: $fontLato;
+        background-color: transparent;
+        font-weight: 700;
+        font-size: 14px;
+        color: $primary;
+        outline: none;
+      }
+
+      &__button2 {
+        margin-bottom: 80px;
+      }
+
+      &-button3 {
+        display: flex;
+        border: 1px solid $primary;
+        border-radius: 4px;
+        padding: 14px 34px;
+        font-family: $fontLato;
+        background-color: transparent;
+        font-weight: 700;
+        font-size: 14px;
+        color: $primary;
+        outline: none;
+
+        &__arrow {
+          margin-left: 8px;
+        }
+      }
+
+      &-form {
+        margin-bottom: 20px;
+        &-label {
+          margin-bottom: 8px;
+
+          &__input {
+            border: 1px solid $lightGray;
+            border-radius: 4px;
+            border-right: none;
+            width: 230px;
+            padding: 12px 16px;
+            outline: none;
+
+            &::placeholder {
+              font-family: $fontLato;
+              font-weight: 400;
+              font-size: 14px;
+              color: $gray;
+            }
+          }
+        }
+
+        &__sub {
+          border: none;
+          border-radius: 4px;
+          padding: 14px 34px;
+          font-family: $fontLato;
+          background-color: $primary;
+          font-weight: 700;
+          font-size: 14px;
+          color: $white;
+          outline: none;
+        }
+      }
+
+      &__img {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+      }
+    }
+  }
+}
