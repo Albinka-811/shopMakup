@@ -1,8 +1,9 @@
 @import "./variables.scss";
 @import "./components/header-container.scss";
 @import "./components/offers-container.scss";
-@import "components/slider-container";
-@import "components/popular-container";
+@import "components/slider-container.scss";
+@import "components/popular-container.scss";
+@import "components/ribbon-container.scss";
 
 * {
   box-sizing: border-box;

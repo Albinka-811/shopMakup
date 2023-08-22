@@ -1,0 +1,118 @@
+.ribbon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  &-title {
+    margin: 0 0 24px 0;
+    font-family: $fontLato;
+    font-weight: 900;
+    font-size: $fontSizeXXL;
+  }
+
+  &-text {
+    font-family: $fontLato;
+    font-weight: 400;
+    font-size: 18px;
+    color: $darkGray;
+    text-align: center;
+    margin-bottom: 60px;
+
+    &__link {
+      font-family: $fontLato;
+      font-weight: 400;
+      font-size: 18px;
+      color: $primary;
+    }
+  }
+
+  &-wrapper {
+  }
+
+  &-list {
+    padding: 0;
+    list-style: none;
+    margin: 0 0 80px 0;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+
+    &-items {
+      display: flex;
+      flex-direction: column;
+      width: 285px;
+      margin-right: 30px;
+      position: relative;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &-package {
+        position: relative;
+
+        &__product {
+        }
+
+        &-rating {
+          position: absolute;
+          right: 16px;
+          top: 16px;
+        }
+
+        &__stars {
+        }
+      }
+
+      &-like {
+        position: relative;
+        margin-bottom: 16px;
+
+        &__icons {
+          right: 16px;
+          position: absolute;
+          bottom: 16px;
+          background: $white;
+          padding: 9px 8px;
+          border-radius: 50%;
+        }
+      }
+
+      &-depiction {
+        font-family: $fontLato;
+        font-weight: 400;
+        font-size: 18px;
+        color: $lightBlack;
+        text-decoration: none;
+        margin: 0 0 8px 16px;
+      }
+
+      &-price {
+        font-family: $fontLato;
+        font-weight: 700;
+        font-size: $fontSizeS;
+        color: #1E212C;
+        margin: 0 0 16px 16px;
+      }
+    }
+  }
+
+  &-line {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+
+    &__btn {
+      border-bottom: 3px solid $lightBlack;
+      width: 30px;
+      margin-right: 12px;
+
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
