@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width; initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&
-    family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet"> rel="stylesheet">
+    family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    rel="stylesheet">
     <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
 <body>
@@ -43,7 +44,7 @@
                 </select>
             </div>
             <div class="header-top-content">
-                <img  class="header-top-content__person" src="~@assets/icons/person.png">
+                <img class="header-top-content__person" src="~@assets/icons/person.png">
                 <button class="header-top-content__log" type="button">Log in/</button>
                 <button class="header-top-content__register" type="button">Register</button>
             </div>
@@ -73,7 +74,8 @@
                 </ul>
             </div>
             <div class="header-basic-content">
-                <input class="header-basic-content-search" type="search" name="text" placeholder="Search for products...">
+                <input class="header-basic-content-search" type="search" name="text"
+                       placeholder="Search for products...">
                 <img class="header-basic-content__loupe" src="~@assets/icons/loupe.png">
             </div>
             <div class="header-basic-content">
@@ -228,10 +230,39 @@
         </div>
     </div>
     <div class="banners">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <div class="banners-row">
+            <div class="banners-row-content">
+                <span class="banners-row-content__text">Summer Collections</span>
+                <h2 class="banners-row-content__title">Sale Up to 70%</h2>
+                <button class="banners-row-content__button">Explore new prices</button>
+            </div>
+            <div class="banners-row-content">
+                <span class="banners-row-content__text">Deal of the week</span>
+                <h2 class="banners-row-content__title">Stay Warm With Our New Sweaters</h2>
+                <button class="banners-row-content__button2">Shop now</button>
+                <span class="banners-row-content__text">Limited time offer</span>
+            </div>
+        </div>
+        <div class="banners-row">
+            <div class="banners-row-content">
+                <span class="banners-row-content__text">New collection</span>
+                <h2 class="banners-row-content__title">Shoes & Bags <br> autumn / winter 2023</h2>
+                <button class="banners-row-content-button3">See offers
+                    <img class="banners-row-content-button3__arrow" src="~@assets/icons/right.png">
+                </button>
+            </div>
+            <div class="banners-row-content">
+                <span class="banners-row-content__text">For All new Email Subscribers</span>
+                <h2 class="banners-row-content__title">Get 5% Off & Free Delivery</h2>
+                <form class="banners-row-content-form">
+                    <input class="banners-row-content-form__input" type="text" placeholder="Your working email">
+                    <button class="banners-row-content-form__sub" type="submit"></button>
+                </form>
+                <span class="banners-row-content__text">*Sign up to be the first to hear about exclusive deals,
+                    special offers and upcoming collections.
+                </span>
+            </div>
+        </div>
     </div>
     <div class="categories"></div>
     <div class="trends"></div>
