@@ -1,0 +1,52 @@
+.instagram {
+  display: flex;
+  margin-bottom: 180px;
+  justify-content: center;
+
+  &-case {
+    display: flex;
+    flex-direction: column;
+    margin-right: 100px;
+
+    &__text {
+      font-family: $fontLato;
+      font-weight: 700;
+      font-size: $fontSizeXS;
+      text-transform: uppercase;
+      color: #1E212C;
+      margin-bottom: 8px;
+    }
+
+    &__title {
+      font-family: $fontLato;
+      font-weight: 900;
+      font-size: $fontSizeXXL;
+      color: #1E212C;
+      margin-bottom: 60px;
+    }
+
+    &-sub {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #17696A;
+      border-radius: 4px;
+      padding: 13px 40px;
+      background-color: transparent;
+      width: 242px;
+      outline: none;
+
+      &__inst {
+        margin-right: 8px;
+      }
+    }
+  }
+
+  &-photo {
+    margin-right: 15px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
