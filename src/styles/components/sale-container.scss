@@ -1,8 +1,4 @@
-.trends {
-  background-color: #E5E8ED;
-  padding-top: 80px;
-  margin-bottom: 100px;
-
+.sale {
   &-header {
     display: flex;
     align-items: baseline;
@@ -41,7 +37,7 @@
     display: flex;
     justify-content: center;
     position: relative;
-    margin-bottom: 80px;
+    margin: 0;
 
     &-items {
       display: flex;
@@ -65,7 +61,23 @@
           right: 16px;
           top: 16px;
 
+          &__rate {
+            left: 0;
+          }
+
           &__stars {
+          }
+        }
+
+        &-chevron {
+          display: flex;
+          position: absolute;
+          top: 50%;
+
+          &-btn {
+            border: none;
+            background-color: transparent;
+            outline: none;
           }
         }
       }
@@ -94,11 +106,45 @@
       }
 
       &-price {
+        margin: 0 0 16px 16px;
+
+        &__newp {
+          font-family: $fontLato;
+          font-weight: 700;
+          font-size: $fontSizeM;
+          color: $red;
+          margin-right: 12px;
+        }
+        &__oldp {
+          font-family: $fontLato;
+          font-weight: 400;
+          font-size: 18px;
+          color: #787A80;
+          text-decoration: line-through;
+        }
+      }
+
+      &-block {
+        display: flex;
+        justify-content: center;
+      }
+
+      &-button {
+        display: flex;
+        margin: 0 16px 16px;
+        padding: 10px 130px;
+        border: none;
+        background-color: $primary;
+        border-radius: 4px;
+
         font-family: $fontLato;
         font-weight: 700;
-        font-size: $fontSizeM;
-        color: #1E212C;
-        margin: 0 0 16px 16px;
+        font-size: 14px;
+        color: $white;
+
+        &__cart {
+          margin-right: 8px;
+        }
       }
     }
   }
@@ -114,7 +160,6 @@
       padding: 16px 49px;
       background-color: transparent;
       color: $primary;
-      margin-bottom: 80px;
       outline: none;
     }
   }
