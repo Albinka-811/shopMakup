@@ -1,0 +1,16 @@
+.brands {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 120px;
+  &-logo {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin-right: 102px;
+    outline: none;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
