@@ -1,0 +1,66 @@
+.subscribe {
+  background: #F4F5F6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 65px 0;
+  &-content {
+    &-title {
+      font-family: $fontLato;
+      font-weight: 900;
+      font-size: $fontSizeXXL;
+      color: #1E212C;
+      margin: 0 0 24px;
+    }
+    &-text {
+      font-family: $fontLato;
+      font-weight: 700;
+      font-size: $fontSizeS;
+      color: $darkGray;
+      margin: 0 0 32px;
+    }
+    &-checkbox {
+      margin-bottom: 32px;
+    }
+    &-form {
+      margin-bottom: 24px;
+      &__input {
+        border: 1px solid $lightGray;
+        border-radius: 4px 0 0 4px;
+        border-right: none;
+        padding: 13px 0 13px 16px;
+        outline: none;
+        margin-top: 8px;
+        width: 341px;
+        height: 52px;
+      }
+
+      &__sub {
+        border: none;
+        border-radius: 0 4px 4px 0;
+        padding: 0 40px;
+        font-family: $fontLato;
+        background-color: $primary;
+        font-weight: 700;
+        font-size: $fontSizeXS;
+        color: #FFFFFF;
+        outline: none;
+        width: 154px;
+        height: 52px;
+      }
+    }
+    &-compact {
+      &__consent {}
+      &__text {
+        font-family: $fontLato;
+        font-weight: 400;
+        font-size: $fontSizeXS;
+        color: $lightBlack;
+      }
+    }
+  }
+
+  &-photo {
+    margin-left: 274px;
+  }
+}
