@@ -1,0 +1,124 @@
+.footer {
+  display: block;
+  background: #1E212C;
+
+  &-nav {
+    display: flex;
+    justify-content: center;
+    padding: 60px 0 40px;
+
+    &-help, &-shop, &-data, &-app {
+      font-family: $fontLato;
+      font-weight: 700;
+      font-size: $fontSizeXS;
+      color: $white;
+      margin-right: 150px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &-list {
+        list-style: none;
+        padding: 0;
+        margin: 12px 0 0;
+
+        &-items {
+          margin-bottom: 4px;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          &__link {
+            text-decoration: none;
+            font-family: $fontLato;
+            font-weight: 400;
+            font-size: $fontSizeXS;
+            color: $white;
+            opacity: 0.6;
+          }
+        }
+      }
+    }
+
+    &-data {
+      &-list {
+        &-items {
+          text-decoration: none;
+          font-family: $fontLato;
+          font-weight: 400;
+          font-size: $fontSizeXS;
+          color: $white;
+        }
+      }
+
+      &-social {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 24px 0 0;
+
+        &-items {
+          margin-right: 12px;
+
+          &:last-child {
+            margin-right: 0;
+          }
+
+          &-links {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            background: rgb(255, 255, 255, 0.12);
+          }
+        }
+      }
+    }
+
+    &-app {
+      &-list {
+        display: flex;
+        margin-top: 24px;
+
+        &-items {
+          margin: 0 20px 0 0;
+
+          &:last-child {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+
+  &-bottom {
+    display: flex;
+    padding: 24px 0 32px;
+    justify-content: center;
+
+    &-left {
+      display: flex;
+      align-items: center;
+      margin-right: 876px;
+
+      font-family: $fontLato;
+      font-weight: 400;
+      font-size: 12px;
+      color: $white;
+
+      &__like {
+        margin: 0 4px;
+      }
+    }
+
+    &-right {
+      font-family: $fontLato;
+      font-weight: 700;
+      font-size: $fontSizeXS;
+      color: $white;
+    }
+  }
+}
