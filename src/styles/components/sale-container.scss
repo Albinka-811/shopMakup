@@ -1,6 +1,6 @@
 .sale {
   margin-bottom: 120px;
-  
+
   &-header {
     display: flex;
     align-items: baseline;
@@ -12,7 +12,7 @@
       font-family: $fontLato;
       font-weight: 900;
       font-size: $fontSizeXXL;
-      color: #1E212C;
+      color: $black;
       margin: 0;
     }
 
@@ -56,18 +56,29 @@
         position: relative;
 
         &__product {
+          position: relative;
         }
 
         &-rating {
-          position: absolute;
-          right: 16px;
-          top: 16px;
 
           &__rate {
-            left: 0;
+            position: absolute;
+            left: 16px;
+            top: 16px;
+            background-color: $red;
+            border-radius: 4px;
+            padding: 4px 8px;
+
+            font-family: $fontLato;
+            font-weight: 700;
+            font-size: $fontSizeXS;
+            color: $white;
           }
 
           &__stars {
+            position: absolute;
+            right: 16px;
+            top: 16px;
           }
         }
 
@@ -108,7 +119,7 @@
       }
 
       &-price {
-        margin: 0 0 16px 16px;
+        margin: 0 16px 16px;
 
         &__newp {
           font-family: $fontLato;
@@ -117,6 +128,7 @@
           color: $red;
           margin-right: 12px;
         }
+
         &__oldp {
           font-family: $fontLato;
           font-weight: 400;
@@ -128,7 +140,92 @@
 
       &-block {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 16px 20px;
+
+        &-size {
+          display: flex;
+
+          &-checkbox {
+            display: flex;
+            align-items: center;
+            position: relative;
+            cursor: pointer;
+
+            &__input {
+              width: 0;
+              height: 0;
+              position: absolute;
+              left: -100vw;
+            }
+
+            &__marker {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 24px;
+              height: 24px;
+              border-radius: 4px;
+              border: 1px solid $lightGray;
+              margin-right: 8px;
+
+              &:hover {
+                border: 1px solid $primary;
+              }
+            }
+          }
+        }
+
+        &-color {
+          display: flex;
+
+          &-radio {
+            display: flex;
+            align-items: center;
+            position: relative;
+            cursor: pointer;
+
+            &__native {
+              width: 0;
+              height: 0;
+              position: absolute;
+              left: -100vw;
+            }
+
+            &__marker {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 20px;
+              height: 20px;
+              border-radius: 50%;
+              border: 1px solid $lightGray;
+              margin-right: 8px;
+
+              &:hover {
+                border: 1px solid $primary;
+              }
+
+              &::before {
+                display: block;
+                content: '';
+                border-radius: 50%;
+                width: 80%;
+                height: 80%;
+                opacity: 1;
+              }
+            }
+
+            //&__native:checked + .markerBlack::before {
+            //  opacity: 1;
+            //}
+            //
+            //&__native:checked + .markerBrown::before {
+            //  opacity: 1;
+            //}
+          }
+        }
       }
 
       &-button {
@@ -164,5 +261,57 @@
       color: $primary;
       outline: none;
     }
+  }
+}
+
+.markerBlack {
+  &::before {
+    background-color: black;
+  }
+}
+
+.markerBrown {
+  &::before {
+    background-color: $brown;
+  }
+}
+
+.markerBlue {
+  margin-right: 0;
+
+  &::before {
+    background-color: $lightBlue;
+  }
+
+}
+
+.number36 {
+  &::before {
+    content: '36';
+  }
+}
+
+.number37 {
+  &::before {
+    content: '37';
+  }
+}
+
+.number38 {
+  &::before {
+    content: '38';
+  }
+}
+
+.number39 {
+  &::before {
+    content: '39';
+  }
+}
+
+.number40 {
+  margin-right: 0;
+  &::before {
+    content: '40';
   }
 }
