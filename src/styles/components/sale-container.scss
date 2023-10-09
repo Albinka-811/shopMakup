@@ -282,36 +282,4 @@
   &::before {
     background-color: $lightBlue;
   }
-
-}
-
-.number36 {
-  &::before {
-    content: '36';
-  }
-}
-
-.number37 {
-  &::before {
-    content: '37';
-  }
-}
-
-.number38 {
-  &::before {
-    content: '38';
-  }
-}
-
-.number39 {
-  &::before {
-    content: '39';
-  }
-}
-
-.number40 {
-  margin-right: 0;
-  &::before {
-    content: '40';
-  }
 }
