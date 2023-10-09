@@ -4,14 +4,18 @@
   justify-content: center;
   align-items: center;
   padding: 65px 0;
+
   &-content {
+    margin-right: 274px;
+
     &-title {
       font-family: $fontLato;
       font-weight: 900;
       font-size: $fontSizeXXL;
-      color: #1E212C;
+      color: $black;
       margin: 0 0 24px;
     }
+
     &-text {
       font-family: $fontLato;
       font-weight: 700;
@@ -19,11 +23,53 @@
       color: $darkGray;
       margin: 0 0 32px;
     }
-    &-checkbox {
+
+    &-category {
+      display: flex;
       margin-bottom: 32px;
+
+      &-checkbox {
+        display: flex;
+        align-items: center;
+        position: relative;
+        cursor: pointer;
+
+        &__input {
+          width: 0;
+          height: 0;
+          position: absolute;
+          left: -100vw;
+        }
+
+        &__marker {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 7px 14.5px;
+          border-radius: 4px;
+          border: 1px solid $lightGray;
+          margin-right: 12px;
+
+          &:hover {
+            border: none;
+            background: $primary;
+          }
+
+          &::before {
+            display: block;
+            content: ' ';
+            font-family: $fontLato;
+            font-weight: 700;
+            font-size: 14px;
+            color: $darkGray;
+          }
+        }
+      }
     }
+
     &-form {
       margin-bottom: 24px;
+
       &__input {
         border: 1px solid $lightGray;
         border-radius: 4px 0 0 4px;
@@ -49,18 +95,75 @@
         height: 52px;
       }
     }
+
     &-compact {
-      &__consent {}
-      &__text {
-        font-family: $fontLato;
-        font-weight: 400;
-        font-size: $fontSizeXS;
-        color: $lightBlack;
+      display: flex;
+      align-items: center;
+
+      &-checkbox {
+        display: flex;
+        align-items: center;
+        position: relative;
+        cursor: pointer;
+
+        &__consent {
+          width: 0;
+          height: 0;
+          position: absolute;
+          left: -100vw;
+          opacity: 1;
+        }
+
+        &__marker {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 16px;
+          height: 16px;
+          border-radius: 4px;
+          border: 1px solid $lightGray;
+          background: $primary;
+
+          &::before {
+            display: block;
+            content: '\2713';
+            color: white;
+          }
+        }
+
+        &-text {
+          font-family: $fontLato;
+          font-weight: 400;
+          font-size: $fontSizeXS;
+          color: $lightBlack;
+        }
       }
     }
   }
+}
 
-  &-photo {
-    margin-left: 274px;
+.categoryW {
+  &::before {
+    content: 'Women';
+  }
+}
+
+.categoryM {
+  &::before {
+    content: 'Men';
+  }
+}
+
+.categoryG {
+  &::before {
+    content: 'Girls';
+  }
+}
+
+.categoryB {
+  margin-right: 0;
+
+  &::before {
+    content: 'Boys';
   }
 }
