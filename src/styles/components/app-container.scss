@@ -1,11 +1,11 @@
 .app {
-  background-color: #1E212C;
+  background-color: $black;
   display: flex;
   margin-bottom: 120px;
   position: relative;
   height: 300px;
 
-  &-cta {
+  &__cta {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -18,7 +18,7 @@
     margin-right: 345px;
     padding-top: 60px;
 
-    &-title {
+    &__title {
       font-family: $fontLato;
       font-weight: 900;
       font-size: $fontSizeXL;
@@ -27,7 +27,7 @@
     }
 
     &-case {
-      &-btn {
+      &-link {
         border: none;
         background-color: transparent;
         margin-right: 24px;

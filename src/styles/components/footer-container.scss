@@ -1,6 +1,6 @@
 .footer {
   display: block;
-  background: #1E212C;
+  background: black;
 
   &-nav {
     display: flex;
@@ -103,7 +103,6 @@
       display: flex;
       align-items: center;
       margin-right: 876px;
-
       font-family: $fontLato;
       font-weight: 400;
       font-size: 12px;
@@ -114,7 +113,7 @@
       }
     }
 
-    &-right {
+    &__right {
       font-family: $fontLato;
       font-weight: 700;
       font-size: $fontSizeXS;

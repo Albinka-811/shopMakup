@@ -26,7 +26,7 @@ module.exports = {
         port: 8080,
     },
     plugins: [new HtmlWebpackPlugin({
-        title: 'Albinka dupcya',
+        title: 'shop',
         template: path.resolve(__dirname, './public/index.html'),
         filename: 'index.html'
     })],

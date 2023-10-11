@@ -9,18 +9,12 @@
     &-content {
       display: flex;
       align-items: center;
-      //margin-right: 195px;
-
-      //&:nth-last-child(2) {
-      //  margin-right: 60px;
-      //}
 
       &:last-child {
         margin-right: 0;
       }
 
-
-      &-span, &-select, {
+      &-data, &-select, {
         font-size: 14px;
       }
 
@@ -28,7 +22,7 @@
         font-size: 14px;
       }
 
-      &-span {
+      &-data {
         font-family: $fontLato;
         font-weight: 400;
         color: $white;
@@ -120,7 +114,7 @@
           list-style: none;
           margin-right: 40px;
 
-          &:last-child  {
+          &:last-child {
             margin-right: 0;
           }
 

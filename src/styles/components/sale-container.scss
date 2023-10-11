@@ -5,10 +5,10 @@
     display: flex;
     align-items: baseline;
     justify-content: space-between;
-    padding: 0 340px;
+    padding: 0 345px;
     margin-bottom: 60px;
 
-    &-title {
+    &__title {
       font-family: $fontLato;
       font-weight: 900;
       font-size: $fontSizeXXL;
@@ -22,6 +22,7 @@
         background-color: transparent;
         outline: none;
         border-radius: 50%;
+        padding: 0;
 
         &__prev {
           margin-right: 12px;
@@ -109,7 +110,7 @@
         }
       }
 
-      &-depiction {
+      &__depiction {
         font-family: $fontLato;
         font-weight: 400;
         font-size: 18px;
@@ -138,7 +139,7 @@
         }
       }
 
-      &-block {
+      &-option {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -153,7 +154,7 @@
             position: relative;
             cursor: pointer;
 
-            &__input {
+            &__native {
               width: 0;
               height: 0;
               position: absolute;
@@ -216,14 +217,6 @@
                 opacity: 1;
               }
             }
-
-            //&__native:checked + .markerBlack::before {
-            //  opacity: 1;
-            //}
-            //
-            //&__native:checked + .markerBrown::before {
-            //  opacity: 1;
-            //}
           }
         }
       }
@@ -235,7 +228,6 @@
         border: none;
         background-color: $primary;
         border-radius: 4px;
-
         font-family: $fontLato;
         font-weight: 700;
         font-size: 14px;
@@ -253,7 +245,7 @@
     flex-direction: column;
     align-items: center;
 
-    &-open {
+    &__open {
       border: 1px solid $primary;
       border-radius: 4px;
       padding: 16px 49px;

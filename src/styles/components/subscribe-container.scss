@@ -8,7 +8,7 @@
   &-content {
     margin-right: 274px;
 
-    &-title {
+    &__title {
       font-family: $fontLato;
       font-weight: 900;
       font-size: $fontSizeXXL;
@@ -16,7 +16,7 @@
       margin: 0 0 24px;
     }
 
-    &-text {
+    &__text {
       font-family: $fontLato;
       font-weight: 700;
       font-size: $fontSizeS;
@@ -34,7 +34,7 @@
         position: relative;
         cursor: pointer;
 
-        &__input {
+        &__native {
           width: 0;
           height: 0;
           position: absolute;
@@ -127,7 +127,7 @@
           }
         }
 
-        &-text {
+        &__text {
           font-family: $fontLato;
           font-weight: 400;
           font-size: $fontSizeXS;
