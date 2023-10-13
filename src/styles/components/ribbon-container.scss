@@ -4,12 +4,14 @@
   align-items: center;
   position: relative;
   margin-bottom: 180px;
+  overflow: hidden;
 
-  &-title {
+  &__title {
     margin: 0 0 24px 0;
     font-family: $fontLato;
     font-weight: 900;
     font-size: $fontSizeXXL;
+    color: $black;
   }
 
   &-text {
@@ -28,9 +30,6 @@
     }
   }
 
-  &-wrapper {
-  }
-
   &-list {
     padding: 0;
     list-style: none;
@@ -46,6 +45,13 @@
       margin-right: 30px;
       position: relative;
 
+      @media (max-width: 1708px) {
+        &:first-child,
+        &:nth-child(2) {
+          display: none;
+        }
+      }
+
       &:last-child {
         margin-right: 0;
       }
@@ -53,16 +59,10 @@
       &-package {
         position: relative;
 
-        &__product {
-        }
-
         &-rating {
           position: absolute;
           right: 16px;
           top: 16px;
-        }
-
-        &__stars {
         }
       }
 
@@ -93,7 +93,7 @@
         font-family: $fontLato;
         font-weight: 700;
         font-size: $fontSizeS;
-        color: #1E212C;
+        color: $black;
         margin: 0 0 16px 16px;
       }
     }
@@ -104,12 +104,10 @@
     flex-direction: row;
     justify-content: center;
 
-
     &__btn {
       border-bottom: 3px solid $lightBlack;
       width: 30px;
       margin-right: 12px;
-
 
       &:last-child {
         margin-right: 0;

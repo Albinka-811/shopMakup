@@ -1,26 +1,20 @@
 .header {
   &-top {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    padding: 11px 0;
+    padding: 11px 345px;
     background-color: $black;
 
     &-content {
       display: flex;
       align-items: center;
-      margin-right: 195px;
-
-      &:nth-last-child(2) {
-        margin-right: 60px;
-      }
 
       &:last-child {
         margin-right: 0;
       }
 
-
-      &-span, &-select, {
+      &-data, &-select, {
         font-size: 14px;
       }
 
@@ -28,9 +22,11 @@
         font-size: 14px;
       }
 
-      &-span {
+      &-data {
         font-family: $fontLato;
+        font-weight: 400;
         color: $white;
+        opacity: 0.6;
 
         &__number {
           font-family: $fontLato;
@@ -56,17 +52,22 @@
             font-family: $fontLato;
             color: $white;
             text-decoration: none;
+            font-weight: 400;
             font-size: 14px;
+            opacity: 0.6;
           }
         }
       }
 
+      &__log, &__register, &-select {
+        opacity: 0.6;
+        font-family: $fontLato;
+        color: $white;
+      }
       &-select {
         background: transparent;
         outline: none;
         border: none;
-        font-family: $fontLato;
-        color: $white;
       }
 
       &__flag {
@@ -83,8 +84,6 @@
         background: transparent;
         outline: none;
         border: none;
-        font-family: $fontLato;
-        color: $white;
         padding: 0;
       }
     }
@@ -98,19 +97,17 @@
 
     &-content {
       display: flex;
+      position: relative;
 
       &__logo {
         margin-right: 60px;
         height: 22px;
-
-        &:first-child {
-          margin-right: 0;
-        }
       }
 
       &-list {
         display: flex;
-        margin: 0;
+        position: relative;
+        margin: 0 116px 0 0;
         padding: 0;
 
         &-items {
@@ -118,7 +115,11 @@
           margin-right: 40px;
 
           &:last-child {
-            margin-right: 132px;
+            margin-right: 0;
+          }
+
+          &:last-of-type &__link {
+            color: red;
           }
 
           &__link {
@@ -126,9 +127,10 @@
             font-size: $fontSizeXS;
             font-weight: 700;
             text-decoration: none;
+            color: $black;
 
             &:hover {
-              color: $red;
+              color: $primary;
             }
           }
         }
@@ -152,6 +154,8 @@
 
       &__loupe {
         position: absolute;
+        top: 30%;
+        right: 14%;
       }
 
       &-toolbar {

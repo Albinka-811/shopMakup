@@ -7,14 +7,14 @@
     display: flex;
     align-items: baseline;
     justify-content: space-between;
-    padding: 0 340px;
+    padding: 0 345px;
     margin-bottom: 60px;
 
-    &-title {
+    &__title {
       font-family: $fontLato;
       font-weight: 900;
       font-size: $fontSizeXXL;
-      color: #1E212C;
+      color: $black;
       margin: 0;
     }
 
@@ -24,6 +24,7 @@
         background-color: transparent;
         outline: none;
         border-radius: 50%;
+        padding: 0;
 
         &__prev {
           margin-right: 12px;
@@ -41,7 +42,7 @@
     display: flex;
     justify-content: center;
     position: relative;
-    margin-bottom: 80px;
+    margin: 0 0 80px;
 
     &-items {
       display: flex;
@@ -57,16 +58,10 @@
       &-package {
         position: relative;
 
-        &__product {
-        }
-
         &-rating {
           position: absolute;
           right: 16px;
           top: 16px;
-
-          &__stars {
-          }
         }
       }
 
@@ -97,7 +92,7 @@
         font-family: $fontLato;
         font-weight: 700;
         font-size: $fontSizeM;
-        color: #1E212C;
+        color: $black;
         margin: 0 0 16px 16px;
       }
     }

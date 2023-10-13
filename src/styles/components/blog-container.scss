@@ -4,29 +4,27 @@
   &-header {
     display: flex;
     justify-content: space-between;
-    padding: 0 340px;
+    padding: 0 345px;
     margin-bottom: 60px;
 
-    &-name {
+    &__name {
       font-family: $fontLato;
       font-weight: 900;
       font-size: $fontSizeXXL;
-      color: #1E212C;
+      color: $black;
       margin: 0;
     }
 
-    &-button {
+    &__open{
       border: 1px solid $primary;
       border-radius: 4px;
       padding: 13px 33px;
       background-color: transparent;
       outline: none;
-
       font-family: $fontLato;
       font-weight: 700;
       font-size: 14px;
       color: $primary;
-
     }
   }
 
@@ -41,15 +39,15 @@
         margin-right: 0;
       }
 
-      &-img {
+      &__img {
         margin-bottom: 24px;
       }
 
-      &-title {
+      &__title {
         font-family: $fontLato;
         font-weight: 700;
         font-size: $fontSizeS;
-        color: #1E212C;
+        color: $black;
         margin: 0 0 12px;
         padding: 0 24px;
       }
@@ -83,10 +81,9 @@
         }
       }
 
-      &-text {
+      &__text {
         margin: 0;
         padding: 0 24px 21px;
-
         font-family: $fontLato;
         font-weight: 400;
         font-size: $fontSizeXS;
