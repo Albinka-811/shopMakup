@@ -3,14 +3,12 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     mode: 'development',
-    entry: {
-        main: path.resolve(__dirname, './src/index.js'),
-    },
+    entry: path.resolve(__dirname, './src/index.js'),
     output: {
         filename: '[name].bundle.js',
         path: path.resolve(__dirname, 'dist'),
-        assetModuleFilename: './src/assets/images/[name].[ext]',
-        clean: true,
+        assetModuleFilename: 'assets/images/[name][ext]',
+        clean: process.env.NODE_ENV === "production",
     },
     resolve: {
         alias: {
@@ -21,8 +19,6 @@ module.exports = {
     devServer: {
         static: path.resolve('./src/assets/'),
         historyApiFallback: true,
-        hot: true,
-        compress: true,
         port: 8080,
     },
     plugins: [new HtmlWebpackPlugin({
@@ -38,14 +34,11 @@ module.exports = {
                     'style-loader',
                     'css-loader',
                     {
-                        loader: 'resolve-url-loader',
-                    },
-                    {
                         loader: 'sass-loader',
                         options: {
-                            sourceMap: true, // <-- !!IMPORTANT!!
+                            sourceMap: true,
                         }
-                    }
+                    },
                 ]
             },
             {
