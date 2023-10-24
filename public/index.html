@@ -251,12 +251,14 @@
             <img class="offers-btnR__next" src="~@assets/icons/right-chevron.png">
         </button>
     </div>
-    <div class="slider">
-        <h3 class="slider__text">New collection</h3>
-        <h1 class="slider__title">Menswear 2023</h1>
-        <div class="slider-buttons">
-            <button class="slider-buttons__left" type="button" name="text">Shop sale</button>
-            <button class="slider-buttons__right" type="button" name="text">Shop the menswear</button>
+    <div class="slider-wrapper">
+        <div class="slider">
+            <h3 class="slider__text">New collection</h3>
+            <h1 class="slider__title">Menswear 2023</h1>
+            <div class="slider-buttons">
+                <button class="slider-buttons__left" type="button" name="text">Shop sale</button>
+                <button class="slider-buttons__right" type="button" name="text">Shop the menswear</button>
+            </div>
         </div>
         <div class="slider-controls">
             <div class="slider-controls-rowG">
@@ -275,19 +277,21 @@
             </div>
         </div>
     </div>
-    <div class="populars">
-        <button class="populars-position" type="button" name="button">
-            <img class="populars-position__img" src="~@assets/images/women.png">
-            <span class="populars-position__name">Women`s</span>
-        </button>
-        <button class="populars-position" type="button" name="button">
-            <img class="populars-position__img" src="~@assets/images/men.png">
-            <span class="populars-position__name">Men`s</span>
-        </button>
-        <button class="populars-position" type="button" name="button">
-            <img class="populars-position__img" src="~@assets/images/kids.png">
-            <span class="populars-position__name">Kids`</span>
-        </button>
+    <div class="populars-wrapper">
+        <div class="populars">
+            <button class="populars-position" type="button" name="button">
+                <img class="populars-position__img" src="~@assets/images/women.png">
+                <span class="populars-position__name">Women`s</span>
+            </button>
+            <button class="populars-position" type="button" name="button">
+                <img class="populars-position__img" src="~@assets/images/men.png">
+                <span class="populars-position__name">Men`s</span>
+            </button>
+            <button class="populars-position" type="button" name="button">
+                <img class="populars-position__img" src="~@assets/images/kids.png">
+                <span class="populars-position__name">Kids`</span>
+            </button>
+        </div>
     </div>
     <div class="ribbon">
         <h2 class="ribbon__title">New arrivals</h2>
@@ -416,48 +420,50 @@
             </div>
         </div>
     </div>
-    <div class="categories">
-        <h1 class="categories__title">Popular categories</h1>
-        <div class="categories-line">
-            <button class="categories-line-content" type="button">
-                <img class="categories-line-content__photo" src="~@assets/images/category1.png">
-                <span class="categories-line-content__name">Tops</span>
-            </button>
-            <button class="categories-line-content" type="button">
-                <img class="categories-line-content__photo" src="~@assets/images/category2.png">
-                <span class="categories-line-content__name">T-shirts</span>
-            </button>
-            <button class="categories-line-content" type="button">
-                <img class="categories-line-content__photo" src="~@assets/images/category3.png">
-                <span class="categories-line-content__name">Caps</span>
-            </button>
-            <button class="categories-line-content" type="button">
-                <img class="categories-line-content__photo" src="~@assets/images/category4.png">
-                <span class="categories-line-content__name">Sandals</span>
-            </button>
-            <button class="categories-line-content" type="button">
-                <img class="categories-line-content__photo" src="~@assets/images/category5.png">
-                <span class="categories-line-content__name">Jackets</span>
-            </button>
-            <button class="categories-line-content" type="button">
-                <img class="categories-line-content__photo" src="~@assets/images/category6.png">
-                <span class="categories-line-content__name">Coats</span>
-            </button>
-        </div>
-    </div>
-    <div class="trends">
-        <div class="trends-header">
-            <h2 class="trends-header__title">Trending now</h2>
-            <div class="trends-header-arrows">
-                <button class="trends-header-arrows-btn" type="button">
-                    <img class="trends-header-arrows-btn__prev" src="~@assets/icons/prev-btn.png">
+    <div class="categories-wrapper">
+        <div class="categories">
+            <h1 class="categories__title">Popular categories</h1>
+            <div class="categories-line">
+                <button class="categories-line-content" type="button">
+                    <img class="categories-line-content__photo" src="~@assets/images/category1.png">
+                    <span class="categories-line-content__name">Tops</span>
                 </button>
-                <button class="trends-header-arrows-btn" type="button">
-                    <img class="trends-header-arrows-btn__next" src="~@assets/icons/next-btn.png">
+                <button class="categories-line-content" type="button">
+                    <img class="categories-line-content__photo" src="~@assets/images/category2.png">
+                    <span class="categories-line-content__name">T-shirts</span>
+                </button>
+                <button class="categories-line-content" type="button">
+                    <img class="categories-line-content__photo" src="~@assets/images/category3.png">
+                    <span class="categories-line-content__name">Caps</span>
+                </button>
+                <button class="categories-line-content" type="button">
+                    <img class="categories-line-content__photo" src="~@assets/images/category4.png">
+                    <span class="categories-line-content__name">Sandals</span>
+                </button>
+                <button class="categories-line-content" type="button">
+                    <img class="categories-line-content__photo" src="~@assets/images/category5.png">
+                    <span class="categories-line-content__name">Jackets</span>
+                </button>
+                <button class="categories-line-content" type="button">
+                    <img class="categories-line-content__photo" src="~@assets/images/category6.png">
+                    <span class="categories-line-content__name">Coats</span>
                 </button>
             </div>
         </div>
+    </div>
+    <div class="trends">
         <div class="trends-wrapper">
+            <div class="trends-header">
+                <h2 class="trends-header__title">Trending now</h2>
+                <div class="trends-header-arrows">
+                    <button class="trends-header-arrows-btn" type="button">
+                        <img class="trends-header-arrows-btn__prev" src="~@assets/icons/prev-btn.png">
+                    </button>
+                    <button class="trends-header-arrows-btn" type="button">
+                        <img class="trends-header-arrows-btn__next" src="~@assets/icons/next-btn.png">
+                    </button>
+                </div>
+            </div>
             <ul class="trends-list">
                 <li class="trends-list-items">
                     <a class="trends-list-items-package">
@@ -500,18 +506,18 @@
         </div>
     </div>
     <div class="sale">
-        <div class="sale-header">
-            <h2 class="sale-header__title">Sale up to 70%</h2>
-            <div class="sale-header-arrows">
-                <button class="sale-header-arrows-btn" type="button">
-                    <img class="sale-header-arrows-btn__prev" src="~@assets/icons/prev-btn.png">
-                </button>
-                <button class="sale-header-arrows-btn" type="button">
-                    <img class="sale-header-arrows-btn__next" src="~@assets/icons/next-btn.png">
-                </button>
-            </div>
-        </div>
         <div class="sale-wrapper">
+            <div class="sale-header">
+                <h2 class="sale-header__title">Sale up to 70%</h2>
+                <div class="sale-header-arrows">
+                    <button class="sale-header-arrows-btn" type="button">
+                        <img class="sale-header-arrows-btn__prev" src="~@assets/icons/prev-btn.png">
+                    </button>
+                    <button class="sale-header-arrows-btn" type="button">
+                        <img class="sale-header-arrows-btn__next" src="~@assets/icons/next-btn.png">
+                    </button>
+                </div>
+            </div>
             <ul class="sale-list">
                 <li class="sale-list-items">
                     <a class="sale-list-items-package">

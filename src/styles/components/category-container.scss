@@ -1,7 +1,13 @@
 .categories {
   display: flex;
   flex-direction: column;
-  margin-bottom: 180px;
+  justify-content: center;
+  max-width: 1230px;
+  margin: 0 auto;
+
+  &-wrapper {
+    margin-bottom: 180px;
+  }
 
   &__title {
     font-family: $fontLato;
@@ -14,7 +20,6 @@
   
   &-line {
     display: flex;
-    justify-content: center;
 
     &-content {
       display: flex;

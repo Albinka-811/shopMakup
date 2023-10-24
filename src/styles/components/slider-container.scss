@@ -1,14 +1,14 @@
 .slider {
-  background-image: url("~@assets/images/backound-slider.png");
-  padding-top: 140px;
-  height: 800px;
+  max-width: 1230px;
+  margin: 0 auto;
 
-  &-buttons {
-    padding-left: 345px;
+  &-wrapper {
+    background-image: url("~@assets/images/backound-slider.png");
+    padding-top: 140px;
+    height: 800px;
   }
 
   &__text, &__title {
-    padding-left: 345px;
     font-family: $fontLato;
   }
 
@@ -55,7 +55,6 @@
 
     &-rowG {
       display: flex;
-      flex-direction: row;
       justify-content: space-between;
       margin-bottom: 142px;
 
@@ -79,7 +78,7 @@
     }
 
     &-rowB {
-      padding-left: 345px;
+      padding-left: 326px;
 
       &__date {
         font-family: $fonUbuntu;
@@ -91,7 +90,7 @@
         background: transparent;
         width: 178px;
         text-align: left;
-        padding-bottom: 12px;
+        padding: 0 0 12px;
 
         &:hover {
           border-bottom: 2px solid $darkGray;
