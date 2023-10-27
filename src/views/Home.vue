@@ -1,0 +1,661 @@
+<template>
+  <main class="main">
+    <AppHeader />
+    <div class="offers">
+      <button class="offers-btnL" type="button">
+        <img class="offers-btnL__prev" src="../assets/icons/left-chevron.png">
+      </button>
+      <span class="offers-text"> Up to 70% Off.
+                <a class="offers-text__link" href="#">Shop our latest sale styles</a>
+            </span>
+      <button class="offers-btnR" type="button">
+        <img class="offers-btnR__next" src="../assets/icons/right-chevron.png">
+      </button>
+    </div>
+    <div class="slider">
+      <h3 class="slider__text">New collection</h3>
+      <h1 class="slider__title">Menswear 2023</h1>
+      <div class="slider-buttons">
+        <button class="slider-buttons__left" type="button" name="text">Shop sale</button>
+        <button class="slider-buttons__right" type="button" name="text">Shop the menswear</button>
+      </div>
+      <div class="slider-controls">
+        <div class="slider-controls-rowG">
+          <button class="slider-controls-rowG-btn" type="button" name="button">
+            <img class="slider-controls-rowG-btn__prev" src="../assets/icons/prev-btn.png">
+          </button>
+          <button class="slider-controls-rowG-btn" type="button" name="button">
+            <img class="slider-controls-rowG-btn__next" src="../assets/icons/next-btn.png">
+          </button>
+        </div>
+        <div class="slider-controls-rowB">
+          <button class="slider-controls-rowB__date">01</button>
+          <button class="slider-controls-rowB__date">02</button>
+          <button class="slider-controls-rowB__date">03</button>
+          <button class="slider-controls-rowB__date">04</button>
+        </div>
+      </div>
+    </div>
+    <div class="populars">
+      <button class="populars-position" type="button" name="button">
+        <img class="populars-position__img" src="../assets/images/women.png">
+        <span class="populars-position__name">Women`s</span>
+      </button>
+      <button class="populars-position" type="button" name="button">
+        <img class="populars-position__img" src="../assets/images/men.png">
+        <span class="populars-position__name">Men`s</span>
+      </button>
+      <button class="populars-position" type="button" name="button">
+        <img class="populars-position__img" src="../assets/images/kids.png">
+        <span class="populars-position__name">Kids`</span>
+      </button>
+    </div>
+    <div class="ribbon">
+      <h2 class="ribbon__title">New arrivals</h2>
+      <span class="ribbon-text">
+                Check out our latest arrivals for the upcoming season <br>
+                <a class="ribbon-text__link" href="#">See the collection here</a>
+            </span>
+      <div class="ribbon-wrapper">
+        <ul class="ribbon-list">
+          <li class="ribbon-list-items">
+            <a class="ribbon-list-items-package">
+              <img class="ribbon-list-items-package__product" src="../assets/images/product1.png">
+              <span class="ribbon-list-items-package-rating">
+                                <img class="ribbon-list-items-package-rating__stars" src="../assets/icons/rating5.png">
+                            </span>
+            </a>
+            <span class="ribbon-list-items-like">
+                            <img class="ribbon-list-items-like__icons" src="../assets/icons/likeGr.png">
+                        </span>
+            <a class="ribbon-list-items-depiction" href="#">Black and white sport cap</a>
+            <span class="ribbon-list-items-price">$18.15</span>
+          </li>
+          <li class="ribbon-list-items">
+            <a class="ribbon-list-items-package">
+              <img class="ribbon-list-items-package__product" src="../assets/images/product2.png">
+            </a>
+            <span class="ribbon-list-items-like">
+                            <img class="ribbon-list-items-like__icons" src="../assets/icons/likeGr.png">
+                        </span>
+            <a class="ribbon-list-items-depiction" href="#">Metal bridge sunglasses</a>
+            <span class="ribbon-list-items-price">$89.95</span>
+          </li>
+          <li class="ribbon-list-items">
+            <a class="ribbon-list-items-package">
+              <img class="ribbon-list-items-package__product" src="../assets/images/product3.png">
+              <span class="ribbon-list-items-package-rating">
+                                <img class="ribbon-list-items-package-rating__stars" src="../assets/icons/rating4.png">
+                            </span>
+            </a>
+            <span class="ribbon-list-items-like">
+                            <img class="ribbon-list-items-like__icons" src="../assets/icons/likeGr.png">
+                        </span>
+            <a class="ribbon-list-items-depiction" href="#">Green baby romper</a>
+            <span class="ribbon-list-items-price">$20.40</span>
+          </li>
+          <li class="ribbon-list-items">
+            <a class="ribbon-list-items-package">
+              <img class="ribbon-list-items-package__product" src="../assets/images/product4.png">
+            </a>
+            <span class="ribbon-list-items-like">
+                            <img class="ribbon-list-items-like__icons" src="../assets/icons/likeGr.png">
+                        </span>
+            <a class="ribbon-list-items-depiction" href="#">Mid-rise slim cropped fit jeans</a>
+            <span class="ribbon-list-items-price">$40.00</span>
+          </li>
+          <li class="ribbon-list-items">
+            <a class="ribbon-list-items-package">
+              <img class="ribbon-list-items-package__product" src="../assets/images/product5.png">
+              <span class="ribbon-list-items-package-rating">
+                                <img class="ribbon-list-items-package-rating__stars" src="../assets/icons/rating5.png">
+                            </span>
+            </a>
+            <span class="ribbon-list-items-like">
+                            <img class="ribbon-list-items-like__icons" src="../assets/icons/likeGr.png">
+                        </span>
+            <a class="ribbon-list-items-depiction" href="#">Red dangle earrings</a>
+            <span class="ribbon-list-items-price">$29.95</span>
+          </li>
+          <li class="ribbon-list-items">
+            <a class="ribbon-list-items-package">
+              <img class="ribbon-list-items-package__product" src="../assets/images/product6.png">
+            </a>
+            <span class="ribbon-list-items-like">
+                            <img class="ribbon-list-items-like__icons" src="../assets/icons/likeGr.png">
+                        </span>
+            <a class="ribbon-list-items-depiction" href="#">Baby shoes with laces</a>
+            <span class="ribbon-list-items-price">$30.60</span>
+          </li>
+        </ul>
+      </div>
+      <div class="ribbon-line">
+        <span class="ribbon-line__btn"></span>
+        <span class="ribbon-line__btn"></span>
+        <span class="ribbon-line__btn"></span>
+        <span class="ribbon-line__btn"></span>
+        <span class="ribbon-line__btn"></span>
+        <span class="ribbon-line__btn"></span>
+      </div>
+    </div>
+    <div class="banners">
+      <div class="banners-row">
+        <div class="banners-row-content background1">
+          <span class="banners-row-content__text">Summer Collections</span>
+          <h2 class="banners-row-content__title">Sale Up to 70%</h2>
+          <button class="banners-row-content__button">Explore new prices</button>
+        </div>
+        <div class="banners-row-content background2">
+          <span class="banners-row-content__text">Deal of the week</span>
+          <h2 class="banners-row-content__title">Stay Warm With Our <br> New Sweaters</h2>
+          <button class="banners-row-content__button2">Shop now</button>
+          <p class="banners-row-content__text">Limited time offer</p>
+        </div>
+      </div>
+      <div class="banners-row">
+        <div class="banners-row-content background3">
+          <span class="banners-row-content__text">New collection</span>
+          <h2 class="banners-row-content__title">Shoes & Bags <br> autumn / winter 2023</h2>
+          <button class="banners-row-content-button3">See offers
+            <img class="banners-row-content-button3__arrow" src="../assets/icons/right.png">
+          </button>
+        </div>
+        <div class="banners-row-content background4">
+          <span class="banners-row-content__text">For All new Email Subscribers</span>
+          <h2 class="banners-row-content__title">Get 5% Off & Free Delivery</h2>
+          <form class="banners-row-content-form">
+            <label class="banners-row-content-form-label">Email <br>
+              <input class="banners-row-content-form-label__input" type="text"
+                     placeholder="Your working email">
+            </label>
+            <button class="banners-row-content-form__sub" type="submit">Subscribe</button>
+          </form>
+          <span class="banners-row-content__text"> *Sign up to be the first to hear about exclusive deals,
+                        special offers and upcoming collections.
+                    </span>
+          <img class="banners-row-content__img" src="../assets/images/banner-img4.png">
+        </div>
+      </div>
+    </div>
+    <div class="categories">
+      <h1 class="categories__title">Popular categories</h1>
+      <div class="categories-line">
+        <button class="categories-line-content" type="button">
+          <img class="categories-line-content__photo" src="../assets/images/category1.png">
+          <span class="categories-line-content__name">Tops</span>
+        </button>
+        <button class="categories-line-content" type="button">
+          <img class="categories-line-content__photo" src="../assets/images/category2.png">
+          <span class="categories-line-content__name">T-shirts</span>
+        </button>
+        <button class="categories-line-content" type="button">
+          <img class="categories-line-content__photo" src="../assets/images/category3.png">
+          <span class="categories-line-content__name">Caps</span>
+        </button>
+        <button class="categories-line-content" type="button">
+          <img class="categories-line-content__photo" src="../assets/images/category4.png">
+          <span class="categories-line-content__name">Sandals</span>
+        </button>
+        <button class="categories-line-content" type="button">
+          <img class="categories-line-content__photo" src="../assets/images/category5.png">
+          <span class="categories-line-content__name">Jackets</span>
+        </button>
+        <button class="categories-line-content" type="button">
+          <img class="categories-line-content__photo" src="../assets/images/category6.png">
+          <span class="categories-line-content__name">Coats</span>
+        </button>
+      </div>
+    </div>
+    <div class="trends">
+      <div class="trends-header">
+        <h2 class="trends-header__title">Trending now</h2>
+        <div class="trends-header-arrows">
+          <button class="trends-header-arrows-btn" type="button">
+            <img class="trends-header-arrows-btn__prev" src="../assets/icons/prev-btn.png">
+          </button>
+          <button class="trends-header-arrows-btn" type="button">
+            <img class="trends-header-arrows-btn__next" src="../assets/icons/next-btn.png">
+          </button>
+        </div>
+      </div>
+      <div class="trends-wrapper">
+        <ul class="trends-list">
+          <li class="trends-list-items">
+            <a class="trends-list-items-package">
+              <img class="trends-list-items-package__product" src="../assets/images/product7.png">
+              <span class="trends-list-items-package-rating">
+                                <img class="trends-list-items-package-rating__stars" src="../assets/icons/rating5.png">
+                            </span>
+            </a>
+            <span class="trends-list-items-like">
+                            <img class="trends-list-items-like__icons" src="../assets/icons/likeGr.png">
+                        </span>
+            <a class="trends-list-items-depiction" href="#">Shirt with insertion lace trims</a>
+            <span class="trends-list-items-price">$49.95</span>
+          </li>
+          <li class="trends-list-items">
+            <a class="trends-list-items-package">
+              <img class="trends-list-items-package__product" src="../assets/images/product8.png">
+              <span class="trends-list-items-package-rating">
+                                <img class="trends-list-items-package-rating__stars" src="../assets/icons/rating4.png">
+                            </span>
+            </a>
+            <span class="trends-list-items-like">
+                            <img class="trends-list-items-like__icons" src="../assets/icons/likeGr.png">
+                        </span>
+            <a class="trends-list-items-depiction" href="#">Chrono watch with blue leather belt</a>
+            <span class="trends-list-items-price">$120.60</span>
+          </li>
+          <li class="trends-list-items">
+            <a class="trends-list-items-package">
+              <img class="ribbon-list-items-package__product" src="../assets/images/product9.png">
+            </a>
+            <span class="trends-list-items-like">
+                            <img class="trends-list-items-like__icons" src="../assets/icons/likeGr.png">
+                        </span>
+            <a class="trends-list-items-depiction" href="#">Check coat with colour contrast</a>
+            <span class="trends-list-items-price">$183.45</span>
+          </li>
+        </ul>
+        <button class="trends-wrapper-open" type="button">Explore top sales</button>
+      </div>
+    </div>
+    <div class="sale">
+      <div class="sale-header">
+        <h2 class="sale-header__title">Sale up to 70%</h2>
+        <div class="sale-header-arrows">
+          <button class="sale-header-arrows-btn" type="button">
+            <img class="sale-header-arrows-btn__prev" src="../assets/icons/prev-btn.png">
+          </button>
+          <button class="sale-header-arrows-btn" type="button">
+            <img class="sale-header-arrows-btn__next" src="../assets/icons/next-btn.png">
+          </button>
+        </div>
+      </div>
+      <div class="sale-wrapper">
+        <ul class="sale-list">
+          <li class="sale-list-items">
+            <a class="sale-list-items-package">
+              <img class="sale-list-items-package__product" src="../assets/images/product10.png">
+              <span class="sale-list-items-package-rating">
+                                <span class="sale-list-items-package-rating__rate">-50%</span>
+                                <img class="sale-list-items-package-rating__stars" src="../assets/icons/rating5.png">
+                            </span>
+            </a>
+            <span class="sale-list-items-like">
+                            <img class="sale-list-items-like__icons" src="../assets/icons/likeGr.png">
+                        </span>
+            <a class="sale-list-items__depiction" href="#">Leather crossbody bag with gold hardware</a>
+            <div class="sale-list-items-price">
+              <span class="sale-list-items-price__newp">$89.50</span>
+              <span class="sale-list-items-price__old">$179.00</span>
+            </div>
+          </li>
+          <li class="sale-list-items">
+            <a class="sale-list-items-package">
+              <img class="sale-list-items-package__product" src="../assets/images/product11.png">
+              <span class="sale-list-items-package-rating">
+                                <span class="sale-list-items-package-rating__rate">-50%</span>
+                            </span>
+            </a>
+            <span class="sale-list-items-like">
+                            <img class="sale-list-items-like__icons" src="../assets/icons/likeGr.png">
+                        </span>
+            <a class="sale-list-items__depiction" href="#">Skinny push-up jeans</a>
+            <div class="sale-list-items-price">
+              <span class="sale-list-items-price__newp">$40.00</span>
+              <span class="sale-list-items-price__old">$80.00</span>
+            </div>
+          </li>
+          <li class="sale-list-items">
+            <a class="sale-list-items-package">
+              <img class="sale-list-items-package__product" src="../assets/images/product12.png">
+              <span class="sale-list-items-package-rating">
+                                <span class="sale-list-items-package-rating__rate">-20%</span>
+                                <img class="sale-list-items-package-rating__stars" src="../assets/icons/rating5.png">
+                            </span>
+              <div class="sale-list-items-package-chevron">
+                <button class="sale-list-items-package-chevron-btn" type="button">
+                  <img class="sale-list-items-package-chevron-btn__left"
+                       src="../assets/icons/left-chevron.png">
+                </button>
+                <button class="sale-list-items-package-chevron-btn" type="button">
+                  <img class="sale-list-items-package-chevron-btn__right"
+                       src="../assets/icons/right-chevron.png">
+                </button>
+              </div>
+            </a>
+            <span class="sale-list-items-like">
+                            <img class="sale-list-items-like__icons" src="../assets/icons/likeGr.png">
+                        </span>
+            <a class="sale-list-items__depiction" href="#">Wide heel suede ankle boots</a>
+            <div class="sale-list-items-price">
+              <span class="sale-list-items-price__newp">$119.16</span>
+              <span class="sale-list-items-price__old">$148.95</span>
+            </div>
+            <div class="sale-list-items-option">
+              <div class="sale-list-items-option-size">
+                <label class="sale-list-items-option-size-checkbox">
+                  <input type="checkbox" class="sale-list-items-option-size-checkbox__native" name="size">
+                  <span class="sale-list-items-option-size-checkbox__marker">36</span>
+                </label>
+                <label class="sale-list-items-option-size-checkbox">
+                  <input type="checkbox" class="sale-list-items-option-size-checkbox__native" name="size">
+                  <span class="sale-list-items-option-size-checkbox__marker">37</span>
+                </label>
+                <label class="sale-list-items-option-size-checkbox">
+                  <input type="checkbox" class="sale-list-items-option-size-checkbox__native" name="size">
+                  <span class="sale-list-items-option-size-checkbox__marker">38</span>
+                </label>
+                <label class="sale-list-items-option-size-checkbox">
+                  <input type="checkbox" class="sale-list-items-option-size-checkbox__native" name="size">
+                  <span class="sale-list-items-option-size-checkbox__marker">39</span>
+                </label>
+                <label class="sale-list-items-option-size-checkbox">
+                  <input type="checkbox" class="sale-list-items-option-size-checkbox__native" name="size">
+                  <span class="sale-list-items-option-size-checkbox__marker">40</span>
+                </label>
+              </div>
+              <div class="sale-list-items-option-color">
+                <label class="sale-list-items-option-color-radio">
+                  <input type="radio" class="sale-list-items-option-color-radio__native" name="color">
+                  <span class="sale-list-items-option-color-radio__marker markerBlack"></span>
+                </label>
+                <label class="sale-list-items-option-color-radio">
+                  <input type="radio" class="sale-list-items-option-color-radio__native" name="color">
+                  <span class="sale-list-items-option-color-radio__marker markerBrown"></span>
+                </label>
+                <label class="sale-list-items-option-color-radio">
+                  <input type="radio" class="sale-list-items-option-color-radio__native" name="color">
+                  <span class="sale-list-items-option-color-radio__marker markerBlue"></span>
+                </label>
+              </div>
+            </div>
+            <button class="sale-list-items-button" type="button">
+              <img class="sale-list-items-button__cart" src="../assets/icons/cart_white.png">
+              Add to cart
+            </button>
+          </li>
+        </ul>
+        <button class="sale-wrapper__open" type="button">See all sale products</button>
+      </div>
+    </div>
+    <div class="app">
+      <img class="app__cta" src="../assets/images/cta-img5.png">
+      <div class="app-info">
+        <h2 class="app-info__title">Enjoy mobile shopping with our Createx <br> Store App!</h2>
+        <div class="app-info-case">
+          <a class="app-info-case-link" href="https://www.apple.com/">
+            <img class="app-info-case-link__apple" src="../assets/icons/app-store.png">
+          </a>
+          <a class="app-info-case-link" href="https://play.google.com/">
+            <img class="app-info-case-link__google" src="../assets/icons/google-play.png">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="services">
+      <button class="services-click" type="button">
+        <img class="services-click__icon" src="../assets/icons/ic-delivery.png">
+        <span class="services-click__title">Fast Worldwide Shipping</span>
+        <span class="services-click__text">Get free shipping over $250</span>
+      </button>
+      <img class="services__divider" src="../assets/icons/lineV.png">
+      <button class="services-click" type="button">
+        <img class="services-click__icon" src="../assets/icons/ic-call-center.png">
+        <span class="services-click__title">24/7 Customer Support</span>
+        <span class="services-click__text">Friendly 24/7 customer support</span>
+      </button>
+      <img class="services__divider" src="../assets/icons/lineV.png">
+      <button class="services-click" type="button">
+        <img class="services-click__icon" src="../assets/icons/ic-shield.png">
+        <span class="services-click__title">Money Back Guarantee</span>
+        <span class="services-click__text">We return money within 30 days</span>
+      </button>
+      <img class="services__divider" src="../assets/icons/lineV.png">
+      <button class="services-click" type="button">
+        <img class="services-click__icon" src="../assets/icons/ic-credit-card.png">
+        <span class="services-click__title">Secure Online Payment</span>
+        <span class="services-click__text">Accept all major credit cards</span>
+      </button>
+    </div>
+    <div class="instagram">
+      <div class="instagram-case">
+        <span class="instagram-case__text">Follow us on Instagram</span>
+        <h1 class="instagram-case__title">@createx_store</h1>
+        <a class="instagram-case-link" href="https://www.instagram.com/">
+          <img class="instagram-case-link__inst" src="../assets/icons/Instagram.png">
+          Follow instagram
+        </a>
+      </div>
+      <img class="instagram-photo" src="../assets/images/inst-img6.png">
+      <img class="instagram-photo" src="../assets/images/inst-img7.png">
+      <img class="instagram-photo" src="../assets/images/inst-img8.png">
+    </div>
+    <div class="blog">
+      <div class="blog-header">
+        <h2 class="blog-header__name">Fashion blog</h2>
+        <button class="blog-header__open">View blog</button>
+      </div>
+      <div class="blog-content">
+        <div class="blog-content-info">
+          <img class="blog-content-info__img" src="../assets/images/blog-img9.png">
+          <h5 class="blog-content-info__title">Bag Trends for Summer 2023</h5>
+          <div class="blog-content-info-meta">
+            <span class="blog-content-info-meta__name">Fashion</span>
+            <img src="../assets/icons/lineS.png">
+            <span class="blog-content-info-meta__date">August 24, 2023</span>
+            <img src="../assets/icons/lineS.png">
+            <span class="blog-content-info-meta-comments">
+                            <img class="blog-content-info-meta-comments__chat" src="../assets/icons/chat.png">
+                            No comments
+                        </span>
+          </div>
+          <p class="blog-content-info__text">
+            Ipsum aliquet nisi, hendrerit rhoncus quam tortor, maecenas faucibus. Tincidunt <br> aliquet sit
+            vel,
+            venenatis nulla. Integer bibendum turpis convallis...
+          </p>
+        </div>
+        <div class="blog-content-info">
+          <img class="blog-content-info__img" src="../assets/images/blog-img10.png">
+          <h5 class="blog-content-info__title">Top 10 of This Season’s Hottest Sneakers</h5>
+          <div class="blog-content-info-meta">
+            <span class="blog-content-info-meta__name">Lifestyle</span>
+            <img src="../assets/icons/lineS.png">
+            <span class="blog-content-info-meta__date">July 16, 2023</span>
+            <img src="../assets/icons/lineS.png">
+            <span class="blog-content-info-meta-comments">
+                            <img class="blog-content-info-meta-comments__chat" src="../assets/icons/chat.png">
+                            4 comments
+                        </span>
+          </div>
+          <p class="blog-content-info__text">
+            Porta habitant vitae quam interdum. Leo viverra non volutpat rhoncus placerat <br> vitae
+            scelerisque.
+            Rhoncus augue faucibus maecenas lacus...
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="brands">
+      <button class="brands-logo" type="button">
+        <img class="brands-logo__name" src="../assets/icons/brand-logo1.png">
+      </button>
+      <button class="brands-logo" type="button">
+        <img class="brands-logo__name" src="../assets/icons/brand-logo2.png">
+      </button>
+      <button class="brands-logo" type="button">
+        <img class="brands-logo__name" src="../assets/icons/brand-logo3.png">
+      </button>
+      <button class="brands-logo" type="button">
+        <img class="brands-logo__name" src="../assets/icons/brand-logo4.png">
+      </button>
+      <button class="brands-logo" type="button">
+        <img class="brands-logo__name" src="../assets/icons/brand-logo5.png">
+      </button>
+      <button class="brands-logo" type="button">
+        <img class="brands-logo__name" src="../assets/icons/brand-logo6.png">
+      </button>
+    </div>
+    <div class="subscribe">
+      <div class="subscribe-content">
+        <h1 class="subscribe-content__title">Subscribe for updates</h1>
+        <h5 class="subscribe-content__text">Subscribe for exclusive early sale access and new arrivals.</h5>
+        <div class="subscribe-content-category">
+          <label class="subscribe-content-category-checkbox">
+            <input type="checkbox" class="subscribe-content-category-checkbox__native" name="category">
+            <span class="subscribe-content-category-checkbox__marker">Women</span>
+          </label>
+          <label class="subscribe-content-category-checkbox">
+            <input type="checkbox" class="subscribe-content-category-checkbox__native" name="category">
+            <span class="subscribe-content-category-checkbox__marker">Men</span>
+          </label>
+          <label class="subscribe-content-category-checkbox">
+            <input type="checkbox" class="subscribe-content-category-checkbox__native" name="category">
+            <span class="subscribe-content-category-checkbox__marker">Girls</span>
+          </label>
+          <label class="subscribe-content-category-checkbox">
+            <input type="checkbox" class="subscribe-content-category-checkbox__native" name="category">
+            <span class="subscribe-content-category-checkbox__marker">Boys</span>
+          </label>
+        </div>
+        <form class="subscribe-content-form">
+          Email
+          <br>
+          <input class="subscribe-content-form__input" type="text" placeholder="Your working email">
+          <button class="subscribe-content-form__sub" type="submit">Subscribe</button>
+        </form>
+        <div class="subscribe-content-compact">
+          <label class="subscribe-content-compact-checkbox">
+            <input class="subscribe-content-compact-checkbox__consent" type="checkbox" name="scales">
+            <span class="subscribe-content-compact-checkbox__marker"></span>
+            <span class="subscribe-content-compact-checkbox__text">I agree to receive communications from Createx Store.</span>
+          </label>
+        </div>
+      </div>
+      <img class="subscribe__photo" src="../assets/images/cub-img13.png">
+    </div>
+    <footer class="footer">
+      <div class="footer-nav">
+        <nav class="footer-nav-help">
+          HELP
+          <ul class="footer-nav-help-list">
+            <li class="footer-nav-help-list-items">
+              <a class="footer-nav-help-list-items__link" href="#">Delivery & returns</a>
+            </li>
+            <li class="footer-nav-help-list-items">
+              <a class="footer-nav-help-list-items__link" href="#">FAQ</a>
+            </li>
+            <li class="footer-nav-help-list-items">
+              <a class="footer-nav-help-list-items__link" href="#">Track order</a>
+            </li>
+            <li class="footer-nav-help-list-items">
+              <a class="footer-nav-help-list-items__link" href="#">Contacts</a>
+            </li>
+            <li class="footer-nav-help-list-items">
+              <a class="footer-nav-help-list-items__link" href="#">Blog</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="footer-nav-shop">
+          SHOP
+          <ul class="footer-nav-shop-list">
+            <li class="footer-nav-shop-list-items">
+              <a class="footer-nav-shop-list-items__link" href="#">New arrivals</a>
+            </li>
+            <li class="footer-nav-shop-list-items">
+              <a class="footer-nav-shop-list-items__link" href="#">Trending now</a>
+            </li>
+            <li class="footer-nav-shop-list-items">
+              <a class="footer-nav-shop-list-items__link" href="#">Sales</a>
+            </li>
+            <li class="footer-nav-shop-list-items">
+              <a class="footer-nav-shop-list-items__link" href="#">Brands</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="footer-nav-data">
+          GET IN TOUCH
+          <ul class="footer-nav-data-list">
+            <li class="footer-nav-data-list-items">
+              Call:
+              <a class="footer-nav-data-list-items__link" href="tel: 4055550128">(405) 555-0128</a>
+            </li>
+            <li class="footer-nav-data-list-items">
+              Email:
+              <a class="footer-nav-data-list-items__link"
+                 href="mailto: hello@createx.com">hello@createx.com</a>
+            </li>
+          </ul>
+          <ul class="footer-nav-data-social">
+            <li class="footer-nav-data-social-items">
+              <a class="footer-nav-data-social-items-links" href="https://uk-ua.facebook.com/">
+                <img class="footer-nav-data-social-items-links__name" src="../assets/icons/facebook.png">
+              </a>
+            </li>
+            <li class="footer-nav-data-social-items">
+              <a class="footer-nav-data-social-items-links" href="https://www.instagram.com/">
+                <img class="footer-nav-data-social-items-links__name" src="../assets/icons/instagramW.png">
+              </a>
+            </li>
+            <li class="footer-nav-data-social-items">
+              <a class="footer-nav-data-social-items-links" href="https://twitter.com/">
+                <img class="footer-nav-data-social-items-links__name" src="../assets/icons/twitter.png">
+              </a>
+            </li>
+            <li class="footer-nav-data-social-items">
+              <a class="footer-nav-data-social-items-links" href="https://www.youtube.com/">
+                <img class="footer-nav-data-social-items-links__name" src="../assets/icons/youTube.png">
+              </a>
+            </li>
+            <li class="footer-nav-data-social-items">
+              <a class="footer-nav-data-social-items-links" href="https://ru.pinterest.com/">
+                <img class="footer-nav-data-social-items-links__name" src="../assets/icons/pinterest.png">
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="footer-nav-app">
+          DOWNLOAD OUR APP
+          <ul class="footer-nav-app-list">
+            <li class="footer-nav-app-list-items">
+              <a class="footer-nav-app-list-items-links" href="https://www.apple.com/">
+                <img class="footer-nav-app-list-items-links__name" src="../assets/icons/app-store.png">
+              </a>
+            </li>
+            <li class="footer-nav-app-list-items">
+              <a class="footer-nav-app-list-items-links" href="https://play.google.com/">
+                <img class="footer-nav-app-list-items-links__name" src="../assets/icons/google-play.png">
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+                <span class="footer-bottom-left">
+                    © All rights reserved. Made with
+                    <img class="footer-bottom-left__like" src="../assets/icons/likeG.png">
+                    by Createx Studio
+                </span>
+        <span class="footer-bottom__right">
+                    Go to top
+                </span>
+      </div>
+    </footer>
+  </main>
+
+</template>
+
+<script>
+import AppHeader from '@/components/AppHeader.vue';
+// @ is an alias to /src
+
+export default {
+  name: 'Landing',
+  components: {
+    AppHeader
+  }
+};
+</script>
