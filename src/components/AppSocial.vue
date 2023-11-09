@@ -1,3 +1,26 @@
+<script>
+export default {
+  name: "AppSocial"
+}
+</script>
+
+<template>
+  <div class="instagram">
+    <div class="instagram-case">
+      <span class="instagram-case__text">Follow us on Instagram</span>
+      <h1 class="instagram-case__title">@createx_store</h1>
+      <a class="instagram-case-link" href="https://www.instagram.com/">
+        <img class="instagram-case-link__inst" src="../assets/icons/Instagram.png">
+        Follow instagram
+      </a>
+    </div>
+    <img class="instagram-photo" src="../assets/images/inst-img6.png">
+    <img class="instagram-photo" src="../assets/images/inst-img7.png">
+    <img class="instagram-photo" src="../assets/images/inst-img8.png">
+  </div>
+</template>
+
+<style scoped lang="scss">
 .instagram {
   display: flex;
   margin-bottom: 180px;
@@ -55,3 +78,4 @@
     }
   }
 }
+</style>

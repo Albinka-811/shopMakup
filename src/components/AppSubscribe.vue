@@ -1,3 +1,51 @@
+<script>
+export default {
+  name: "AppSubscribe"
+}
+</script>
+
+<template>
+  <div class="subscribe">
+    <div class="subscribe-content">
+      <h1 class="subscribe-content__title">Subscribe for updates</h1>
+      <h5 class="subscribe-content__text">Subscribe for exclusive early sale access and new arrivals.</h5>
+      <div class="subscribe-content-category">
+        <label class="subscribe-content-category-checkbox">
+          <input type="checkbox" class="subscribe-content-category-checkbox__native" name="category">
+          <span class="subscribe-content-category-checkbox__marker">Women</span>
+        </label>
+        <label class="subscribe-content-category-checkbox">
+          <input type="checkbox" class="subscribe-content-category-checkbox__native" name="category">
+          <span class="subscribe-content-category-checkbox__marker">Men</span>
+        </label>
+        <label class="subscribe-content-category-checkbox">
+          <input type="checkbox" class="subscribe-content-category-checkbox__native" name="category">
+          <span class="subscribe-content-category-checkbox__marker">Girls</span>
+        </label>
+        <label class="subscribe-content-category-checkbox">
+          <input type="checkbox" class="subscribe-content-category-checkbox__native" name="category">
+          <span class="subscribe-content-category-checkbox__marker">Boys</span>
+        </label>
+      </div>
+      <form class="subscribe-content-form">
+        Email
+        <br>
+        <input class="subscribe-content-form__input" type="text" placeholder="Your working email">
+        <button class="subscribe-content-form__sub" type="submit">Subscribe</button>
+      </form>
+      <div class="subscribe-content-compact">
+        <label class="subscribe-content-compact-checkbox">
+          <input class="subscribe-content-compact-checkbox__consent" type="checkbox" name="scales">
+          <span class="subscribe-content-compact-checkbox__marker"></span>
+          <span class="subscribe-content-compact-checkbox__text">I agree to receive communications from Createx Store.</span>
+        </label>
+      </div>
+    </div>
+    <img class="subscribe__photo" src="../assets/images/cub-img13.png">
+  </div>
+</template>
+
+<style scoped lang="scss">
 .subscribe {
   background: #F4F5F6;
   display: flex;
@@ -137,3 +185,4 @@
     }
   }
 }
+</style>

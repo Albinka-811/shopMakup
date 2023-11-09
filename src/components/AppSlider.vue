@@ -1,14 +1,50 @@
-.slider {
-  background-image: url("/src/assets/images/backound-slider.png");
-  padding-top: 140px;
-  height: 800px;
+<script>
+export default {
+  name: "AppSlider"
+}
+</script>
 
-  &-buttons {
-    padding-left: 345px;
+<template>
+  <div class="slider-wrapper">
+    <div class="slider">
+      <h3 class="slider__text">New collection</h3>
+      <h1 class="slider__title">Menswear 2023</h1>
+      <div class="slider-buttons">
+        <button class="slider-buttons__left" type="button" name="text">Shop sale</button>
+        <button class="slider-buttons__right" type="button" name="text">Shop the menswear</button>
+      </div>
+    </div>
+    <div class="slider-controls">
+      <div class="slider-controls-rowG">
+        <button class="slider-controls-rowG-btn" type="button" name="button">
+          <img class="slider-controls-rowG-btn__prev" src="~@assets/icons/prev-btn.png">
+        </button>
+        <button class="slider-controls-rowG-btn" type="button" name="button">
+          <img class="slider-controls-rowG-btn__next" src="~@assets/icons/next-btn.png">
+        </button>
+      </div>
+      <div class="slider-controls-rowB">
+        <button class="slider-controls-rowB__date">01</button>
+        <button class="slider-controls-rowB__date">02</button>
+        <button class="slider-controls-rowB__date">03</button>
+        <button class="slider-controls-rowB__date">04</button>
+      </div>
+    </div>
+  </div>
+</template>
+
+<style scoped lang="scss">
+.slider {
+  max-width: 1230px;
+  margin: 0 auto;
+
+  &-wrapper {
+    background-image: url("/src/assets/images/backound-slider.png");
+    padding-top: 140px;
+    height: 800px;
   }
 
   &__text, &__title {
-    padding-left: 345px;
     font-family: $fontLato;
   }
 
@@ -55,7 +91,6 @@
 
     &-rowG {
       display: flex;
-      flex-direction: row;
       justify-content: space-between;
       margin-bottom: 142px;
 
@@ -91,7 +126,7 @@
         background: transparent;
         width: 178px;
         text-align: left;
-        padding-bottom: 12px;
+        padding: 0 0 12px;
 
         &:hover {
           border-bottom: 2px solid $darkGray;
@@ -101,3 +136,4 @@
     }
   }
 }
+</style>

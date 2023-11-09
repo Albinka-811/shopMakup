@@ -1,3 +1,52 @@
+<script>
+export default {
+  name: "AppBanners"
+}
+</script>
+
+<template>
+  <div class="banners">
+    <div class="banners-row">
+      <div class="banners-row-content background1">
+        <span class="banners-row-content__text">Summer Collections</span>
+        <h2 class="banners-row-content__title">Sale Up to 70%</h2>
+        <button class="banners-row-content__button">Explore new prices</button>
+      </div>
+      <div class="banners-row-content background2">
+        <span class="banners-row-content__text">Deal of the week</span>
+        <h2 class="banners-row-content__title">Stay Warm With Our <br> New Sweaters</h2>
+        <button class="banners-row-content__button2">Shop now</button>
+        <p class="banners-row-content__text">Limited time offer</p>
+      </div>
+    </div>
+    <div class="banners-row">
+      <div class="banners-row-content background3">
+        <span class="banners-row-content__text">New collection</span>
+        <h2 class="banners-row-content__title">Shoes & Bags <br> autumn / winter 2023</h2>
+        <button class="banners-row-content-button3">See offers
+          <img class="banners-row-content-button3__arrow" src="../assets/icons/right.png">
+        </button>
+      </div>
+      <div class="banners-row-content background4">
+        <span class="banners-row-content__text">For All new Email Subscribers</span>
+        <h2 class="banners-row-content__title">Get 5% Off & Free Delivery</h2>
+        <form class="banners-row-content-form">
+          <label class="banners-row-content-form-label">Email <br>
+            <input class="banners-row-content-form-label__input" type="text"
+                   placeholder="Your working email">
+          </label>
+          <button class="banners-row-content-form__sub" type="submit">Subscribe</button>
+        </form>
+        <span class="banners-row-content__text"> *Sign up to be the first to hear about exclusive deals,
+                        special offers and upcoming collections.
+                    </span>
+        <img class="banners-row-content__img" src="../assets/images/banner-img4.png">
+      </div>
+    </div>
+  </div>
+</template>
+
+<style scoped lang="scss">
 .background1, .background4 {
   width: 735px;
   height: 500px;
@@ -144,3 +193,5 @@
     }
   }
 }
+
+</style>
