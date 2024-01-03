@@ -1,6 +1,4 @@
 <script>
-import AppHeader from '@/components/AppHeader.vue';
-import AppOffers from '@/components/AppOffers.vue';
 import AppSlider from '@/components/AppSlider.vue';
 import AppPopularsRang from '@/components/AppPopularsRang.vue';
 import AppRibbon from '@/components/AppRibbon.vue';
@@ -13,15 +11,12 @@ import AppServices from '@/components/AppServices.vue';
 import AppSocial from '@/components/AppSocial.vue';
 import AppBlog from '@/components/AppBlog.vue';
 import AppBrands from '@/components/AppBrands.vue';
-import AppSubscribe from '@/components/AppSubscribe.vue';
-import AppFooter from '@/components/AppFooter.vue';
+
 // @ is an alias to /src
 
 export default {
-  name: 'Landing',
+  name: 'AppLanding',
   components: {
-    AppFooter,
-    AppSubscribe,
     AppBrands,
     AppBlog,
     AppSocial,
@@ -32,8 +27,6 @@ export default {
     AppCategories,
     AppBanners,
     AppRibbon,
-    AppHeader,
-    AppOffers,
     AppSlider,
     AppPopularsRang,
   }
@@ -42,8 +35,6 @@ export default {
 
 <template>
   <main class="main">
-    <AppHeader/>
-    <AppOffers/>
     <AppSlider/>
     <AppPopularsRang/>
     <AppRibbon/>
@@ -56,8 +47,6 @@ export default {
     <AppSocial/>
     <AppBlog/>
     <AppBrands/>
-    <AppSubscribe/>
-    <AppFooter/>
   </main>
 </template>
 

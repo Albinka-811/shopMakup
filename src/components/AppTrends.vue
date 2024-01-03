@@ -1,7 +1,7 @@
 <script>
 export default {
-  name: "AppTrends"
-}
+  name: 'AppTrends'
+};
 </script>
 
 <template>
@@ -157,7 +157,7 @@ export default {
         font-weight: 700;
         font-size: $fontSizeM;
         color: $black;
-        margin: 0 0 16px 16px;
+        margin: 0 0 16px 11px;
       }
     }
   }

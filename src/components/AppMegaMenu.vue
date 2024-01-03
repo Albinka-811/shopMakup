@@ -1,7 +1,7 @@
 <script>
 export default {
-  name: "AppMegaMenu"
-}
+  name: 'AppMegaMenu'
+};
 </script>
 
 <template>
@@ -142,13 +142,13 @@ export default {
           </ul>
         </li>
       </ul>
-      <img src="../assets/icons/dividerLong.png" />
+      <img src="../assets/icons/dividerLong.png"/>
       <div class="menu-banner">
-        <img class="menu-banner__image" src="../assets/images/menuImage.png" />
+        <img class="menu-banner__image" src="../assets/images/menuImage.png"/>
         <span class="menu-banner__text">Back to school. Sale up to 50%</span>
         <button class="menu-banner-btn" type="submit">
           See offers
-          <img class="menu-banner-btn__arrow" src="../assets/icons/right.png" />
+          <img class="menu-banner-btn__arrow" src="../assets/icons/right.png"/>
         </button>
       </div>
     </div>
@@ -164,7 +164,7 @@ export default {
   padding: 20px 0 0;
 
   &-wrapper {
-    //display: none;
+    display: none;
     position: absolute;
     top: 145px;
     left: 0;
@@ -188,6 +188,7 @@ export default {
       &:last-child {
         margin-right: 0;
       }
+
       &__title {
         text-transform: uppercase;
         font-family: $fontLato;
@@ -195,6 +196,7 @@ export default {
         font-size: 14px;
         color: $black;
       }
+
       &-list {
         list-style: none;
         padding: 0;
@@ -221,13 +223,16 @@ export default {
       }
     }
   }
+
   &-banner {
     display: flex;
     flex-flow: column;
     margin-left: 68px;
+
     &__image {
       margin-bottom: 16px;
     }
+
     &__text {
       font-family: $fontLato;
       font-weight: 700;
@@ -235,6 +240,7 @@ export default {
       color: $black;
       margin-bottom: 16px;
     }
+
     &-btn {
       display: flex;
       padding: 0 24px;
