@@ -10,16 +10,6 @@ export default {
   },
   data () {
     return {
-      clothesTypes: [
-        {
-          name: 'Coats',
-          count: 16,
-        },
-        {
-          name: 'Jackets',
-          count: 16,
-        },
-      ],
       cards: [
         {
           rating: 5, // 0 -> 5
@@ -148,15 +138,9 @@ export default {
       </select>
     </div>
     <div class="general">
-      <SideBar>
-
-      </SideBar>
-<!--      <div class="general-sidebar">-->
-<!--        <div :key="item.name" v-for="item in clothesTypes">{{-->
-<!--            item.name-->
-<!--          }} ({{ item.count }}-->
-<!--        </div>-->
-<!--      </div>-->
+      <div class="general-sidebar">
+        <SideBar/>
+      </div>
       <div class="general-products">
         <CardItem
           v-for="card in cards"
@@ -180,6 +164,7 @@ export default {
   width: 1230px;
 
   &-sidebar {
+    width: 255px;
   }
 
   &-products {
