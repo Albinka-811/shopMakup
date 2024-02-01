@@ -2,6 +2,20 @@ import { createRouter, createWebHistory } from 'vue-router';
 import Home from '../views/Home.vue';
 import Catalog from '../views/Catalog.vue';
 
+const CatalogChildren = [
+  {
+    path: '',
+    component: Catalog,
+  },
+  {
+    path: 'catalog/:type',
+    component: Catalog,
+    meta: {
+      breadcrumb: 'Clothes'
+    },
+  }
+];
+
 const routes = [
   {
     path: '/',
@@ -9,9 +23,22 @@ const routes = [
     component: Home
   },
   {
-    path: '/catalog',
-    name: 'Catalog',
-    component: Catalog
+    path: '/women',
+    name: 'Women',
+    alias: '/women/catalog',
+    meta: {
+      breadcrumb: 'Women'
+    },
+    children: CatalogChildren
+  },
+  {
+    path: '/men',
+    name: 'Men',
+    alias: '/men/catalog',
+    meta: {
+      breadcrumb: 'Men'
+    },
+    children: CatalogChildren
   },
   {
     path: '/page-url',
