@@ -1,12 +1,16 @@
 <script>
 import FilterItem from '@/components/FilterItem.vue';
-import FilterSize from '@components/FilterSize.vue';
+import FilterSize from '@/components/FilterSize.vue';
+import FilterColor from '@/components/FilterColor.vue';
+import FilterPrice from '@/components/FilterPrice.vue';
 
 export default {
   name: 'SideBar',
   components: {
     FilterItem,
-    FilterSize
+    FilterSize,
+    FilterColor,
+    FilterPrice
   },
   data () {
     return {
@@ -116,6 +120,221 @@ export default {
           }
         ]
       },
+
+      colorFilter: {
+        title: 'Color',
+        items: [
+          {
+            color: '#000000',
+            name: 'Black',
+          },
+          {
+            color: '#C0DDED',
+            name: 'Blue-grey',
+          },
+          {
+            color: '#FCD164',
+            name: 'Yellow',
+          },
+          {
+            color: '#F75151',
+            name: 'Red',
+          },
+          {
+            color: '#0C2C7E',
+            name: 'Dark blue',
+          },
+          {
+            color: '#D8C1AD',
+            name: 'Beige',
+          },
+          {
+            color: '#874E19',
+            name: 'Brown',
+          },
+          {
+            color: '#9A9494',
+            name: 'Gray',
+          },
+          {
+            color: '#A27AC9',
+            name: 'Purple',
+          },
+          {
+            color: '#67BA92',
+            name: 'Green',
+          },
+          {
+            color: '#FB9620',
+            name: 'Orange',
+          },
+          {
+            color: '#F1F1F1',
+            name: 'White',
+          },
+          {
+            color: '#00FF00',
+            name: 'Lime',
+          },
+          {
+            color: '#00FFFF',
+            name: 'Aqua',
+          },
+          {
+            color: '#800000',
+            name: 'Marron',
+          },
+          {
+            color: '#808000',
+            name: 'Olive',
+          },
+
+
+
+        ]
+      },
+
+      materialFilter: {
+        title: 'Material',
+        items: [
+          {
+            active: true,
+            name: 'Cotton',
+            count: 162,
+          },
+          {
+            active: false,
+            name: 'Synthetics',
+            count: 12,
+          },
+          {
+            active: false,
+            name: 'Napa leather',
+            count: 26,
+          },
+          {
+            active: false,
+            name: 'Leather',
+            count: 5,
+          },
+          {
+            active: false,
+            name: 'Cashmere',
+            count: 41,
+          },
+          {
+            active: false,
+            name: 'Denim',
+            count: 48,
+          },
+          {
+            active: false,
+            name: 'Silk',
+            count: 15,
+          },
+          {
+            active: false,
+            name: 'Chiffon',
+            count: 17,
+          },
+          {
+            active: false,
+            name: 'Suede',
+            count: 11,
+          },
+          {
+            active: false,
+            name: 'Satin',
+            count: 7,
+          },
+          {
+            active: false,
+            name: 'Jersey',
+            count: 23,
+          },
+          {
+            active: false,
+            name: 'Lace',
+            count: 13,
+          },
+          {
+            active: false,
+            name: 'Woollen',
+            count: 19,
+          },
+          {
+            active: false,
+            name: 'Linen',
+            count: 25,
+          }
+        ]
+      },
+
+      brandFilter: {
+        title: 'Brand',
+        items: [
+          {
+            active: true,
+            name: 'Adidas',
+            count: 162,
+          },
+          {
+            active: false,
+            name: 'Ann Taylor',
+            count: 12,
+          },
+          {
+            active: false,
+            name: 'Armani',
+            count: 26,
+          },
+          {
+            active: false,
+            name: 'Banana Republic',
+            count: 5,
+          },
+          {
+            active: false,
+            name: 'Calvin Klein',
+            count: 41,
+          },
+          {
+            active: false,
+            name: 'Columbia',
+            count: 48,
+          },
+          {
+            active: false,
+            name: 'H&M',
+            count: 68,
+          },
+          {
+            active: false,
+            name: 'Tommy Hilfiger',
+            count: 37,
+          },
+          {
+            active: false,
+            name: 'Nike',
+            count: 74,
+          },
+          {
+            active: false,
+            name: 'Zara',
+            count: 19,
+          },
+          {
+            active: false,
+            name: 'Lacoste',
+            count: 17,
+          },
+          {
+            active: false,
+            name: 'Puma',
+            count: 15,
+          }
+        ]
+      }
     };
   }
 };
@@ -130,6 +349,19 @@ export default {
     :title="sizeFilter.title"
     :items="sizeFilter.items"
   />
+  <FilterColor
+    :title="colorFilter.title"
+    :items="colorFilter.items"
+  />
+  <FilterItem
+    :title="materialFilter.title"
+    :items="materialFilter.items"
+  />
+  <FilterItem
+    :title="brandFilter.title"
+    :items="brandFilter.items"
+  />
+  <FilterPrice/>
 </template>
 
 <style lang="scss" scoped>

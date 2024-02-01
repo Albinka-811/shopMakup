@@ -1,12 +1,19 @@
 <script>
 import CardItem from '@/components/CatalogCardItem.vue';
 import SideBar from '@/components/CatalogSideBar.vue';
+import BreadCrumbs from '@/components/CatalogBreadcrumb.vue';
+import AppSvgIcon from '@/components/AppSvgIcon.vue';
+import CatalogToolbar from '@/components/CatalogToolbar.vue';
+
 
 export default {
   name: 'AppCatalog',
   components: {
     SideBar,
-    CardItem
+    CardItem,
+    BreadCrumbs,
+    AppSvgIcon,
+    CatalogToolbar
   },
   data () {
     return {
@@ -119,7 +126,7 @@ export default {
           title: 'Men fashion gray shoes',
           discount: 0 // null | number
         }
-      ]
+      ],
     };
   }
 };
@@ -127,36 +134,51 @@ export default {
 
 <template>
   <main class="main">
-    <div class="breadcrumb">
-      <div class="breadcrumb-navigation">1</div>
-      <div class="breadcrumb-filter">2</div>
-    </div>
-    <div class="toolbar">
-      <button></button>
-      <select>
-        <option>1</option>
-      </select>
+    <div class="breadcrumb-wrapper">
+      <div class="breadcrumb">
+        <BreadCrumbs/>
+      </div>
     </div>
     <div class="general">
       <div class="general-sidebar">
+        <button class="general-sidebar-filterClick">
+          <AppSvgIcon name="filter"/>
+          Hide filters
+        </button>
         <SideBar/>
       </div>
-      <div class="general-products">
-        <CardItem
-          v-for="card in cards"
-          :key="card.id"
-          :img="card.img"
-          :rating="card.rating"
-          :discount="card.discount"
-          :price="card.price"
-          :title="card.title"
-        />
+      <div class="general-container">
+        <CatalogToolbar/>
+        <div class="general-container-products">
+          <CardItem
+            v-for="card in cards"
+            :key="card.id"
+            :img="card.img"
+            :rating="card.rating"
+            :discount="card.discount"
+            :price="card.price"
+            :title="card.title"
+          />
+        </div>
+        <CatalogToolbar/>
       </div>
     </div>
   </main>
 </template>
 
 <style lang="scss">
+.breadcrumb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1230px;
+
+  &-wrapper {
+    background-color: #F4F5F6;
+  }
+}
+
 .general {
   display: flex;
   justify-content: space-between;
@@ -165,13 +187,34 @@ export default {
 
   &-sidebar {
     width: 255px;
+
+    &-filterClick {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 44px;
+      background-color: $primary;
+      border: none;
+      border-radius: 4px;
+      padding: 0 32px;
+      margin-bottom: 32px;
+
+      font-family: $fontLato;
+      font-weight: 700;
+      font-size: 14px;
+      color: $white;
+    }
   }
 
-  &-products {
-    display: grid;
-    grid: repeat(auto-fit, 413px) / repeat(3, 285px);
-    grid-column-gap: 30px;
-    grid-row-gap: 60px;
+  &-container {
+    &-products {
+      display: grid;
+      grid: repeat(auto-fit, 413px) / repeat(3, 285px);
+      grid-column-gap: 30px;
+      grid-row-gap: 60px;
+      margin-bottom: 80px;
+    }
   }
 }
 </style>

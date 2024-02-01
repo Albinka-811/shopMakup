@@ -50,10 +50,10 @@ import AppMegaMenu from '@/components/AppMegaMenu.vue';
         <div class="header-basic-content">
           <ul class="header-basic-content-list">
             <li class="header-basic-content-list-items">
-              <a class="header-basic-content-list-items__link" href="#">Women</a>
+              <router-link class="header-basic-content-list-items__link" to="/catalog/women/clothes">Women</router-link>
             </li>
             <li class="header-basic-content-list-items">
-              <a class="header-basic-content-list-items__link" href="#">Men</a>
+              <router-link class="header-basic-content-list-items__link" to="/men/catalog/clothes">Men</router-link>
             </li>
             <li class="header-basic-content-list-items">
               <a class="header-basic-content-list-items__link" href="#">Girls</a>

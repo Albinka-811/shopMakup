@@ -15,86 +15,100 @@ export default {
 </script>
 
 <template>
-  <div class="sidebar">
-    <div class="sidebar-filter">
-      <div class="sidebar-filter-header">
-        <span class="sidebar-filter-header__title">{{ title }}</span>
-      </div>
-      <div class="sidebar-filter-body">
-        <ul class="sidebar-filter-body-categories">
-          <li class="sidebar-filter-body-categories-items" :key="item.name" v-for="(item) in items">
-            <input
-              class="sidebar-filter-body-categories-items__checkout"
-              v-model="item.active"
-              name=""
-              type="checkbox"
-              :id="item.name">
-            <label class="sidebar-filter-body-categories-items-name" :for="item.name">
-              {{ item.name }}
-              <span class="sidebar-filter-body-categories-items-name__count">
+  <div class="filter">
+    <div class="filter-header">
+      <span class="filter-header__title">{{ title }}</span>
+    </div>
+    <div class="filter-body">
+      <ul class="filter-body-categories">
+        <li class="filter-body-categories-item" :key="item.name" v-for="(item) in items">
+          <span class="filter-body-categories-item__checkout" :id="item.name"> </span>
+          <label class="filter-body-categories-item-name" :for="item.name">
+            {{ item.name }}
+            <span class="filter-body-categories-item-name__count">
                 ({{ item.count }})
               </span>
-            </label>
-          </li>
-        </ul>
-      </div>
+          </label>
+        </li>
+      </ul>
     </div>
   </div>
 </template>
 
 <style scoped lang="scss">
-.sidebar {
-  &-filter {
-    &-header {
-      display: flex;
-      margin-bottom: 16px;
+.filter {
+  &-header {
+    display: flex;
+    margin-bottom: 16px;
 
-      &__title {
-        font-family: $fontLato;
-        font-weight: 700;
-        font-size: $fontSizeXS;
-        color: $black;
-      }
+    &__title {
+      font-family: $fontLato;
+      font-weight: 700;
+      font-size: $fontSizeXS;
+      color: $black;
     }
+  }
 
-    &-body {
-      border-bottom: 1px solid #E5E8ED;
-      width: 255px;
+  &-body {
+    border-bottom: 1px solid #E5E8ED;
+    width: 255px;
+    margin-bottom: 20px;
+
+    &-categories {
+      margin: 0;
+      padding: 0;
+      list-style: none;
       margin-bottom: 20px;
 
-      &-categories {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        margin-bottom: 20px;
+      &-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 8px;
 
-        &-items {
-          display: flex;
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        &__checkout {
+          display: inline-flex;
+          position: relative;
+          width: 16px;
+          height: 16px;
+          border: 1px solid #B3B7BC;
+          border-radius: 3px;
+          cursor: pointer;
+          justify-content: center;
           align-items: center;
-          margin-bottom: 8px;
+          background: $primary;
+          padding: 4px 3px;
 
-          &:last-child {
-            margin-bottom: 0;
+          &::before {
+            content: "";
+            width: 10px;
+            height: 8px;
+            display: block;
+            position: relative;
+            border-right: 2px solid #fff;
+            border-bottom: 2px solid #fff;
+            transform: rotate(40deg);
+            bottom: 1px;
+            border-radius: 1px;
           }
+        }
 
-          &__checkout {
-          }
+        &-name, &__count {
+          font-family: $fontLato;
+          font-weight: 400;
+          font-size: 14px;
+          color: $lightBlack;
+          margin-left: 8px;
 
-          &-name, &__count {
-            font-family: $fontLato;
-            font-weight: 400;
-            font-size: 14px;
-            color: $lightBlack;
-            margin-left: 8px;
-
-            &__count {
-              color: $gray;
-            }
+          &__count {
+            color: $gray;
           }
         }
       }
     }
   }
 }
-
 </style>
